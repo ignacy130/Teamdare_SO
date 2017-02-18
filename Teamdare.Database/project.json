@@ -14,6 +14,18 @@
         "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
     },
     "frameworks": {
-        "netcoreapp1.1": { }
+        "netcoreapp1.1": {
+            "dependencies": {
+                "Microsoft.NETCore.App": {
+                    "version": "1.1.0",
+                    "type": "platform"
+                }
+            }
+        }
+    },
+    "commands": {
+        "create-migration": "dotnet ef --startup-project ./../Teamdare.Bot  migrations add __name__",
+        "remove-migration": "dotnet ef --startup-project ./../Teamdare.Bot  migrations remove",
+        "apply-migrations-to-db": "dotnet ef --startup-project ./../Teamdare.Bot database update"
     }
 }

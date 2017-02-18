@@ -8985,7 +8985,9 @@
       "NETStandard.Library >= 1.6.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.1.0"
     ],
-    ".NETCoreApp,Version=v1.1": []
+    ".NETCoreApp,Version=v1.1": [
+      "Microsoft.NETCore.App >= 1.1.0"
+    ]
   },
   "tools": {
     ".NETCoreApp,Version=v1.0": {

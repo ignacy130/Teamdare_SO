@@ -4,6 +4,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Bot.Connector;
+using Teamdare.Database;
+using Teamdare.Database.Entities;
 
 namespace Teamdare.Bot.Controllers
 {
@@ -13,6 +15,13 @@ namespace Teamdare.Bot.Controllers
     [Route("api/[controller]")]
     public class MessagesController : Controller
     {
+        private readonly TeamdareContext _context;
+
+        public MessagesController(TeamdareContext context)
+        {
+            _context = context;
+        }
+
         /// <summary>
         /// This method will be called every time the bot receives an activity. This is the messaging endpoint
         /// </summary>
