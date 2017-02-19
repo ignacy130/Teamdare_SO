@@ -1,14 +1,15 @@
 using System;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using StructureMap;
-using Teamdare.Bot.Communications;
-using Teamdare.Bot.Communications.Channels;
 using Teamdare.Core;
+using Teamdare.Core.Commands;
+using Teamdare.Core.Events;
+using Teamdare.Core.Queries;
 using Teamdare.Database;
 
 namespace Teamdare.Bot
@@ -50,30 +51,20 @@ namespace Teamdare.Bot
 
         private IServiceProvider ConfigureIoC(IServiceCollection services)
         {
-            var container = new Container();
+            var builder = new ContainerBuilder();
 
-            container.Configure(config =>
-            {
-                config.Scan(_ =>
-                {
-                    _.TheCallingAssembly();
-                    _.AddAllTypesOf<IChannel>();
-                    _.WithDefaultConventions();
-                });
+            builder.RegisterModule<CommandsModule>();
+            builder.RegisterModule<QueriesModule>();
+            builder.RegisterModule<EventsModule>();
+            builder.RegisterModule<CoreModule>();
+            builder.RegisterModule<WebModule>();
+            builder.RegisterModule(new DatabaseModule(Configuration["DbContextSettings:ConnectionString"]));
 
-                config.For<TeamdareContext>()
-                    .Use<TeamdareContext>()
-                    .Ctor<string>()
-                    .Is(Configuration["DbContextSettings:ConnectionString"]);
+            builder.Populate(services);
 
-                config.For<Responses>().Use<Responses>();
-                config.For<CommunicationChannel>().Use<CommunicationChannel>();
-                config.For<CommunicationChannelMap>().Use<CommunicationChannelMap>();
-                config.For<IDateTimeGetter>().Use<DateTimeGetter>();
-                config.Populate(services);
-            });
+            var container = builder.Build();
 
-            return container.GetInstance<IServiceProvider>();
+            return container.Resolve<IServiceProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

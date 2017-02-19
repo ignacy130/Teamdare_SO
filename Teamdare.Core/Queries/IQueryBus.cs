@@ -29,3 +29,4 @@ namespace Teamdare.Core.Queries
             return Perform(check).QueryResult;
         }
     }
+}

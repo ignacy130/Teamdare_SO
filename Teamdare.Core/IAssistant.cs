@@ -1,4 +1,6 @@
-﻿using System.Windows.Input;
+﻿using Teamdare.Core.Commands;
+using Teamdare.Core.Events;
+using Teamdare.Core.Queries;
 
 namespace Teamdare.Core
 {
