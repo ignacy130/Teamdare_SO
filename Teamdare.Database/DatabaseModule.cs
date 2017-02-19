@@ -13,6 +13,8 @@ namespace Teamdare.Database
 
         protected override void Load(ContainerBuilder builder)
         {
+            base.Load(builder);
+
             builder.RegisterType<TeamdareContext>().WithParameter("connectionString", _connectionString);
             //builder.Register((context, parameters) => new TeamdareContext(_connectionString));
         }

@@ -7,10 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Teamdare.Core;
-using Teamdare.Core.Commands;
-using Teamdare.Core.Events;
-using Teamdare.Core.Queries;
 using Teamdare.Database;
+using Teamdare.Domain;
 
 namespace Teamdare.Bot
 {
@@ -53,16 +51,16 @@ namespace Teamdare.Bot
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterModule<CommandsModule>();
-            builder.RegisterModule<QueriesModule>();
-            builder.RegisterModule<EventsModule>();
-            builder.RegisterModule<CoreModule>();
             builder.RegisterModule<WebModule>();
+            builder.RegisterModule<CoreModule>();
+            builder.RegisterModule<DomainModule>();
             builder.RegisterModule(new DatabaseModule(Configuration["DbContextSettings:ConnectionString"]));
 
             builder.Populate(services);
 
             var container = builder.Build();
+
+            IoC.Initialize(container);
 
             return container.Resolve<IServiceProvider>();
         }

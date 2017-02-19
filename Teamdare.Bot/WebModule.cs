@@ -10,6 +10,8 @@ namespace Teamdare.Bot
     {
         protected override void Load(ContainerBuilder builder)
         {
+            base.Load(builder);
+
             builder.RegisterType<Responses>().As<Responses>();
             builder.RegisterType<CommunicationChannel>().As<CommunicationChannel>();
             builder.RegisterType<CommunicationChannelMap>().As<CommunicationChannelMap>();
