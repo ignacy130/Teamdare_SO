@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Teamdare.Bot.Communications;
+using Teamdare.Bot.Communications.Channels;
 using Teamdare.Database;
 
 namespace Teamdare.Bot
@@ -42,6 +44,14 @@ namespace Teamdare.Bot
 
             var connectionString = Configuration["DbContextSettings:ConnectionString"];
             services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString));
+
+            //services - refactoring
+            services.AddTransient<Responses>();
+            services.AddTransient<CommunicationChannel>();
+            services.AddTransient<CommunicationChannelMap>();
+            services.AddTransient<ConversationUpdatesChannel>();
+            services.AddTransient<MessagesChannel>();
+            services.AddTransient<SystemMessagesChannel>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

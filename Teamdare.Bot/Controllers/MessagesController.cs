@@ -1,11 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Bot.Connector;
-using Teamdare.Database;
-using Teamdare.Database.Entities;
+using Teamdare.Bot.Communications;
 
 namespace Teamdare.Bot.Controllers
 {
@@ -15,11 +12,11 @@ namespace Teamdare.Bot.Controllers
     [Route("api/[controller]")]
     public class MessagesController : Controller
     {
-        private readonly TeamdareContext _context;
+        private readonly CommunicationChannel _communicationChannel;
 
-        public MessagesController(TeamdareContext context)
+        public MessagesController(CommunicationChannel communicationChannel)
         {
-            _context = context;
+            _communicationChannel = communicationChannel;
         }
 
         /// <summary>
@@ -32,23 +29,7 @@ namespace Teamdare.Bot.Controllers
         {
             if (activity != null)
             {
-                var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                var reply = activity.CreateReply();
-                switch (activity.GetActivityType())
-                {
-                    case ActivityTypes.Message:
-                        reply.Text = activity.Text;
-                        await connector.Conversations.ReplyToActivityAsync(reply);
-                        break;
-
-                    case ActivityTypes.ConversationUpdate:
-                        if (activity.MembersAdded.Any())
-                        {
-                            reply.Text = "Welcome! ;-)";
-                            await connector.Conversations.ReplyToActivityAsync(reply);
-                        }
-                        break;
-                }
+                await _communicationChannel.Handle(activity);
             }
 
             return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
