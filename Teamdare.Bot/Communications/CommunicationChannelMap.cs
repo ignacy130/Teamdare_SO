@@ -17,7 +17,7 @@ namespace Teamdare.Bot.Communications
             _conversationUpdatesChannel = conversationUpdatesChannel;
         }
 
-        public Channel Find(string activityType)
+        public IChannel Find(string activityType)
         {
             switch (activityType)
             {

@@ -3,12 +3,21 @@ using Microsoft.Bot.Connector;
 
 namespace Teamdare.Bot.Communications.Channels
 {
-    public class MessagesChannel : Channel
+    public class MessagesChannel : IChannel
     {
-        public override async Task Handle(Activity activity)
+        private readonly Responses _responses;
+
+        public MessagesChannel(Responses responses)
         {
-            var connector = GetConnector(activity);
-            var reply = CreateReply(activity);
+            _responses = responses;
+        }
+
+        public async Task Handle(Activity activity)
+        {
+            await _responses.SendTypingIndicator(activity);
+
+            var connector = this._responses.GetConnector(activity);
+            var reply = this._responses.CreateReply(activity);
 
             reply.Text = activity.Text;
             await connector.Conversations.ReplyToActivityAsync(reply);

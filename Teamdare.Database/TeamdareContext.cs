@@ -5,8 +5,17 @@ namespace Teamdare.Database
 {
     public class TeamdareContext : DbContext
     {
-        public TeamdareContext(DbContextOptions options) : base(options)
+        private readonly string _connectionString;
+        public TeamdareContext(string connectionString)
         {
+            _connectionString = connectionString;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql(this._connectionString);
+
+            base.OnConfiguring(optionsBuilder);
         }
 
         public DbSet<Adventure> Adventures { get; set; }

@@ -1,9 +1,11 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using StructureMap;
 using Teamdare.Bot.Communications;
 using Teamdare.Bot.Communications.Channels;
 using Teamdare.Database;
@@ -32,7 +34,7 @@ namespace Teamdare.Bot
         public IConfigurationRoot Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
@@ -42,16 +44,34 @@ namespace Teamdare.Bot
 
             services.AddMvc();
 
-            var connectionString = Configuration["DbContextSettings:ConnectionString"];
-            services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString));
+            return ConfigureIoC(services);
+        }
 
-            //services - refactoring
-            services.AddTransient<Responses>();
-            services.AddTransient<CommunicationChannel>();
-            services.AddTransient<CommunicationChannelMap>();
-            services.AddTransient<ConversationUpdatesChannel>();
-            services.AddTransient<MessagesChannel>();
-            services.AddTransient<SystemMessagesChannel>();
+        private IServiceProvider ConfigureIoC(IServiceCollection services)
+        {
+            var container = new Container();
+
+            container.Configure(config =>
+            {
+                config.Scan(_ =>
+                {
+                    _.TheCallingAssembly();
+                    _.AddAllTypesOf<IChannel>();
+                    _.WithDefaultConventions();
+                });
+                
+                config.For<TeamdareContext>()
+                    .Use<TeamdareContext>()
+                    .Ctor<string>()
+                    .Is(Configuration["DbContextSettings:ConnectionString"]);
+
+                config.For<Responses>().Use<Responses>();
+                config.For<CommunicationChannel>().Use<CommunicationChannel>();
+                config.For<CommunicationChannelMap>().Use<CommunicationChannelMap>();
+                config.Populate(services);
+            });
+
+            return container.GetInstance<IServiceProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

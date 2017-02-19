@@ -5,12 +5,10 @@ namespace Teamdare.Bot.Communications
 {
     public class CommunicationChannel
     {
-        private readonly Responses _responses;
         private readonly CommunicationChannelMap _communicationChannelMap;
 
-        public CommunicationChannel(Responses responses, CommunicationChannelMap communicationChannelMap)
+        public CommunicationChannel(CommunicationChannelMap communicationChannelMap)
         {
-            _responses = responses;
             _communicationChannelMap = communicationChannelMap;
         }
 

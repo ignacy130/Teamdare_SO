@@ -4,12 +4,19 @@ using Microsoft.Bot.Connector;
 
 namespace Teamdare.Bot.Communications.Channels
 {
-    public class ConversationUpdatesChannel : Channel
+    public class ConversationUpdatesChannel : IChannel
     {
-        public override async Task Handle(Activity activity)
+        private readonly Responses _responses;
+
+        public ConversationUpdatesChannel(Responses responses)
         {
-            var connector = GetConnector(activity);
-            var reply = CreateReply(activity);
+            _responses = responses;
+        }
+
+        public async Task Handle(Activity activity)
+        {
+            var connector = this._responses.GetConnector(activity);
+            var reply = this._responses.CreateReply(activity);
 
             if (activity.MembersAdded.Any())
             {
