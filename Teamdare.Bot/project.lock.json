@@ -4411,6 +4411,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Teamdare.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/Teamdare.Core.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/Teamdare.Core.dll": {}
+        }
+      },
       "Teamdare.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
@@ -11444,6 +11457,11 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "Teamdare.Core/1.0.0": {
+      "type": "project",
+      "path": "../Teamdare.Core/project.json",
+      "msbuildProject": "../Teamdare.Core/Teamdare.Core.xproj"
+    },
     "Teamdare.Database/1.0.0": {
       "type": "project",
       "path": "../Teamdare.Database/project.json",
@@ -11474,6 +11492,7 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.1.0",
       "StructureMap.Microsoft.DependencyInjection >= 1.3.0",
       "System.Runtime.Serialization.Xml >= 4.1.1",
+      "Teamdare.Core >= 1.0.0-*",
       "Teamdare.Database >= 1.0.0-*"
     ],
     ".NETCoreApp,Version=v1.1": []

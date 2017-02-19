@@ -1,6 +1,7 @@
 ﻿{
     "dependencies": {
         "Teamdare.Database": "1.0.0-*",
+        "Teamdare.Core": "1.0.0-*",
         "Microsoft.NETCore.App": {
             "version": "1.1.0",
             "type": "platform"

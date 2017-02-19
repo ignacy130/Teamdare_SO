@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using StructureMap;
 using Teamdare.Bot.Communications;
 using Teamdare.Bot.Communications.Channels;
+using Teamdare.Core;
 using Teamdare.Database;
 
 namespace Teamdare.Bot
@@ -59,7 +60,7 @@ namespace Teamdare.Bot
                     _.AddAllTypesOf<IChannel>();
                     _.WithDefaultConventions();
                 });
-                
+
                 config.For<TeamdareContext>()
                     .Use<TeamdareContext>()
                     .Ctor<string>()
@@ -68,6 +69,7 @@ namespace Teamdare.Bot
                 config.For<Responses>().Use<Responses>();
                 config.For<CommunicationChannel>().Use<CommunicationChannel>();
                 config.For<CommunicationChannelMap>().Use<CommunicationChannelMap>();
+                config.For<IDateTimeGetter>().Use<DateTimeGetter>();
                 config.Populate(services);
             });
 
