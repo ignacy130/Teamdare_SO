@@ -1,8 +1,13 @@
-﻿using Autofac;
+﻿using System.Collections.Generic;
+using Autofac;
+using Microsoft.Bot.Connector;
 using Teamdare.Core.Commands;
 using Teamdare.Core.Events;
 using Teamdare.Core.Queries;
-using Module = Autofac.Module;
+using Teamdare.Domain.DecisionTree;
+using Teamdare.Domain.DecisionTree.Base;
+using Teamdare.Domain.DecisionTree.Queries;
+using Teamdare.Domain.NLP;
 
 namespace Teamdare.Domain
 {
@@ -23,6 +28,12 @@ namespace Teamdare.Domain
             builder.RegisterAssemblyTypes(ThisAssembly)
                 .Where(t => t.IsAssignableTo<IQuery>())
                 .AsImplementedInterfaces();
+
+            builder.RegisterType<CheckIfMessageIsEmpty>().As<DecisionQuery<Activity, IEnumerable<Activity>>>();
+
+            builder.RegisterType<NLPProcessor>().As<NLPProcessor>();
+
+            builder.RegisterType<DecisionTreeHead>().As<DecisionTreeHead>();
         }
     }
 }

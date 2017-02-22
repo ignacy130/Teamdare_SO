@@ -6,7 +6,11 @@
   "dependencies": {
      "NETStandard.Library": "1.6.1",
      "Teamdare.Core": "1.0.0-*",
-     "Autofac.Extensions.DependencyInjection": "4.0.0"
+     "Autofac.Extensions.DependencyInjection": "4.0.0",
+     "Microsoft.Bot.Connector": {
+         "include": "all",
+         "version": "3.5.1.0-alpha"
+     }
   },
   "frameworks": {
       "netcoreapp1.1": {}

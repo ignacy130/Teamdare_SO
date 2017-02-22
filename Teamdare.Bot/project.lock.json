@@ -4448,6 +4448,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "4.0.0",
           "NETStandard.Library": "1.6.1",
           "Teamdare.Core": "1.0.0"
         },
