@@ -6,6 +6,7 @@
   "dependencies": {
      "NETStandard.Library": "1.6.1",
      "Teamdare.Core": "1.0.0-*",
+     "Teamdare.Resources": "1.0.0-*",
      "Autofac.Extensions.DependencyInjection": "4.0.0",
      "Microsoft.Bot.Connector": {
          "include": "all",

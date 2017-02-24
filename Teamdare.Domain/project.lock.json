@@ -3640,6 +3640,19 @@
         "runtime": {
           "netcoreapp1.1/Teamdare.Database.dll": {}
         }
+      },
+      "Teamdare.Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/Teamdare.Resources.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/Teamdare.Resources.dll": {}
+        }
       }
     }
   },
@@ -9804,6 +9817,11 @@
       "type": "project",
       "path": "../Teamdare.Database/project.json",
       "msbuildProject": "../Teamdare.Database/Teamdare.Database.xproj"
+    },
+    "Teamdare.Resources/1.0.0": {
+      "type": "project",
+      "path": "../Teamdare.Resources/project.json",
+      "msbuildProject": "../Teamdare.Resources/Teamdare.Resources.xproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9811,7 +9829,8 @@
       "Autofac.Extensions.DependencyInjection >= 4.0.0",
       "Microsoft.Bot.Connector >= 3.5.1-alpha",
       "NETStandard.Library >= 1.6.1",
-      "Teamdare.Core >= 1.0.0-*"
+      "Teamdare.Core >= 1.0.0-*",
+      "Teamdare.Resources >= 1.0.0-*"
     ],
     ".NETCoreApp,Version=v1.1": []
   },

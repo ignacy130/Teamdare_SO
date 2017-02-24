@@ -9,13 +9,13 @@ namespace Teamdare.Domain.DecisionTree.Base
     public class DecisionQuery<T,TV> : Decision<T,TV>
     {
         public string Title { get; set; }
-        public Decision<T, TV> Positive { get; set; } = new DecisionResult<T, TV>();
-        public Decision<T, TV> Negative { get; set; } = new DecisionResult<T, TV>();
+        public Decision<T, TV> Positive { get; set; }
+        public Decision<T, TV> Negative { get; set; }
         public Func<T, bool> Test { get; set; }
 
-        public override TV Evaluate(T client)
+        public override TV Evaluate(T activity)
         {
-            return Test(client) ? Positive.Evaluate(client) : Negative.Evaluate(client);
+            return Test(activity) ? Positive.Evaluate(activity) : Negative.Evaluate(activity);
         }
     }
 }

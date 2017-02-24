@@ -13,8 +13,7 @@ namespace Teamdare.Database.Entities
         }
         public int Level { get; set; }
         public string Nick { get; set; }
-        public string AppNick { get; set; }
-        public string AppId { get; set; }
+        public string UserId { get; set; }
         public string ConversationId { get; set; }
         public string ServiceUrl { get; set; }
 

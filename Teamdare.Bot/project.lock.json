@@ -4449,6 +4449,7 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "4.0.0",
+          "Microsoft.Bot.Connector": "3.5.1-alpha",
           "NETStandard.Library": "1.6.1",
           "Teamdare.Core": "1.0.0"
         },

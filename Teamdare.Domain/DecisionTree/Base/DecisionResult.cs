@@ -8,10 +8,10 @@ namespace Teamdare.Domain.DecisionTree.Base
     public class DecisionResult<T,TV> : Decision<T,TV>
     {
         public Func<T, TV> Perform { get; set; }
-        public override TV Evaluate(T client)
+        public override TV Evaluate(T activity)
         {
             // Print the final result
-            return Perform(client);
+            return Perform(activity);
         }
     }
 }

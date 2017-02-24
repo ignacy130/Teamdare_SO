@@ -20,8 +20,8 @@ namespace Teamdare.Database.Entities
         public Guid AdventureId { get; set; }
         public Adventure Adventure { get; set; }
 
-        public Guid HeroId { get; set; }
-        public Player Hero { get; set; }
+        public Guid PlayerId { get; set; }
+        public Player Player { get; set; }
 
         public List<Player> Participants { get; set; }
     }

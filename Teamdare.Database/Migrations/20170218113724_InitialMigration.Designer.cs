@@ -30,7 +30,7 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<Guid>("GameMasterId");
 
-                    b.Property<Guid>("HeroId");
+                    b.Property<Guid>("PlayerId");
 
                     b.Property<int>("Order");
 
@@ -40,7 +40,7 @@ namespace Teamdare.Database.Migrations
 
                     b.HasIndex("GameMasterId");
 
-                    b.HasIndex("HeroId");
+                    b.HasIndex("PlayerId");
 
                     b.ToTable("Adventures");
                 });
@@ -52,7 +52,7 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<Guid>("AdventureId");
 
-                    b.Property<Guid>("HeroId");
+                    b.Property<Guid>("PlayerId");
 
                     b.Property<bool>("IsCompleted");
 
@@ -68,7 +68,7 @@ namespace Teamdare.Database.Migrations
 
                     b.HasIndex("AdventureId");
 
-                    b.HasIndex("HeroId");
+                    b.HasIndex("PlayerId");
 
                     b.ToTable("Challenges");
                 });
@@ -88,9 +88,9 @@ namespace Teamdare.Database.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("AppId");
+                    b.Property<string>("UserId");
 
-                    b.Property<string>("AppNick");
+                    b.Property<string>("UserNick");
 
                     b.Property<Guid?>("ChallengeId");
 
@@ -146,9 +146,9 @@ namespace Teamdare.Database.Migrations
                         .HasForeignKey("GameMasterId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Teamdare.Database.Entities.Player", "Hero")
+                    b.HasOne("Teamdare.Database.Entities.Player", "Player")
                         .WithMany("Adventures")
-                        .HasForeignKey("HeroId")
+                        .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -159,9 +159,9 @@ namespace Teamdare.Database.Migrations
                         .HasForeignKey("AdventureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Teamdare.Database.Entities.Player", "Hero")
+                    b.HasOne("Teamdare.Database.Entities.Player", "Player")
                         .WithMany()
-                        .HasForeignKey("HeroId")
+                        .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

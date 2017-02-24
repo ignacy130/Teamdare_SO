@@ -134,7 +134,7 @@ namespace Teamdare.Database.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Adventures_HeroId",
                 table: "Adventures",
-                column: "HeroId");
+                column: "PlayerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Challenges_AdventureId",
@@ -144,7 +144,7 @@ namespace Teamdare.Database.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Challenges_HeroId",
                 table: "Challenges",
-                column: "HeroId");
+                column: "PlayerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Players_ChallengeId",
@@ -169,7 +169,7 @@ namespace Teamdare.Database.Migrations
             migrationBuilder.AddForeignKey(
                 name: "FK_Challenges_Players_HeroId",
                 table: "Challenges",
-                column: "HeroId",
+                column: "PlayerId",
                 principalTable: "Players",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);

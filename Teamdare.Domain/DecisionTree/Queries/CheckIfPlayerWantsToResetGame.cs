@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Bot.Connector;
 using Teamdare.Domain.DecisionTree.Base;
+using Teamdare.Domain.DecisionTree.Decisions;
 
 namespace Teamdare.Domain.DecisionTree.Queries
 {
