@@ -29,6 +29,8 @@ namespace Teamdare.Domain.Queries
             player.ConversationId = query.ConversationId;
             player.ServiceUrl = query.ServiceUrl;
 
+            query.QueryResult = true;
+
             return query;
         }
     }

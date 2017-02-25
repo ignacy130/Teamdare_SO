@@ -26,3 +26,4 @@ namespace Teamdare.Domain.DecisionTree.Queries
             };
         }
     }
+}

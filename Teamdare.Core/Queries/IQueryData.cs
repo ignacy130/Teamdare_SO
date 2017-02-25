@@ -7,6 +7,6 @@
 
     public abstract class QueryData<T> : IQueryData<T>
     {
-        public T QueryResult { get; internal set; }
+        public T QueryResult { get; set; }
     }
 }

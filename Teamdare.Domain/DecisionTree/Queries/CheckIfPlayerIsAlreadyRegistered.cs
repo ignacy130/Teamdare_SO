@@ -12,7 +12,7 @@ namespace Teamdare.Domain.DecisionTree.Queries
         {
             Test = activity => Please.Check(
                 new IsUserRegistered(activity.From.Id, activity.Conversation.Id, activity.ServiceUrl));
-            Positive = new ReactToProgressNode();
+            Positive = new CheckIfAnyChallengeIsInProgress();
             Negative = new WelcomeUserDecision();
 
         }

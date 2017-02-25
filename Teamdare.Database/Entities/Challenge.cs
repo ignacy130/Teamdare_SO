@@ -13,8 +13,7 @@ namespace Teamdare.Database.Entities
 
         public DateTime StartDate { get; set; }
         public string Title { get; set; }
-        public bool IsCompleted { get; set; }
-        public bool IsStarted { get; set; }
+        public ChallengeStatus Status { get; set; }
         public int Order { get; set; }
 
         public Guid AdventureId { get; set; }
@@ -24,5 +23,12 @@ namespace Teamdare.Database.Entities
         public Player Player { get; set; }
 
         public List<Player> Participants { get; set; }
+    }
+
+    public enum ChallengeStatus
+    {
+        New,
+        InProgress,
+        Completed
     }
 }

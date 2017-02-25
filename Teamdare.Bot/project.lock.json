@@ -4451,13 +4451,27 @@
           "Autofac.Extensions.DependencyInjection": "4.0.0",
           "Microsoft.Bot.Connector": "3.5.1-alpha",
           "NETStandard.Library": "1.6.1",
-          "Teamdare.Core": "1.0.0"
+          "Teamdare.Core": "1.0.0",
+          "Teamdare.Resources": "1.0.0"
         },
         "compile": {
           "netcoreapp1.1/Teamdare.Domain.dll": {}
         },
         "runtime": {
           "netcoreapp1.1/Teamdare.Domain.dll": {}
+        }
+      },
+      "Teamdare.Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/Teamdare.Resources.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/Teamdare.Resources.dll": {}
         }
       }
     }
@@ -11490,6 +11504,11 @@
       "type": "project",
       "path": "../Teamdare.Domain/project.json",
       "msbuildProject": "../Teamdare.Domain/Teamdare.Domain.xproj"
+    },
+    "Teamdare.Resources/1.0.0": {
+      "type": "project",
+      "path": "../Teamdare.Resources/project.json",
+      "msbuildProject": "../Teamdare.Resources/Teamdare.Resources.xproj"
     }
   },
   "projectFileDependencyGroups": {
