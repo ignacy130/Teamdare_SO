@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Bot.Connector;
+using Teamdare.Domain.DecisionTree.Actions;
 using Teamdare.Domain.DecisionTree.Base;
-using Teamdare.Domain.DecisionTree.Decisions;
 using Teamdare.Domain.Queries;
 
 namespace Teamdare.Domain.DecisionTree.Queries
@@ -13,7 +13,7 @@ namespace Teamdare.Domain.DecisionTree.Queries
             Test = activity => Please.Check(
                 new IsUserRegistered(activity.From.Id, activity.Conversation.Id, activity.ServiceUrl));
             Positive = new CheckIfAnyChallengeIsInProgress();
-            Negative = new WelcomeUserDecision();
+            Negative = new WelcomeUser();
 
         }
     }

@@ -4,9 +4,9 @@ using Teamdare.Domain.Commands;
 using Teamdare.Domain.DecisionTree.Base;
 using Teamdare.Resources;
 
-namespace Teamdare.Domain.DecisionTree.Decisions
+namespace Teamdare.Domain.DecisionTree.Actions
 {
-    public class WelcomeUserDecision : DecisionResult<Activity, IEnumerable<Activity>>
+    public class WelcomeUser : DecisionResult<Activity, IEnumerable<Activity>>
     {
         public override IEnumerable<Activity> Evaluate(Activity activity)
         {
