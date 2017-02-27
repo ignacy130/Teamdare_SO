@@ -3,6 +3,7 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -44,6 +45,10 @@ namespace Teamdare.Bot
 
             services.AddMvc();
 
+
+            var connectionString = Configuration["DbContextSettings:ConnectionString"];
+            services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString));
+
             return ConfigureIoC(services);
         }
 
@@ -54,7 +59,7 @@ namespace Teamdare.Bot
             builder.RegisterModule<WebModule>();
             builder.RegisterModule<CoreModule>();
             builder.RegisterModule<DomainModule>();
-            builder.RegisterModule(new DatabaseModule(Configuration["DbContextSettings:ConnectionString"]));
+            builder.RegisterModule<DatabaseModule>();
 
             builder.Populate(services);
 

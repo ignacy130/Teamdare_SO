@@ -22,7 +22,8 @@ namespace Teamdare.Domain.Commands
             if (player == null)
                 return;
 
-            DbContext.Remove(player);
+            DbContext.Players.Remove(player);
+            DbContext.SaveChanges();
         }
     }
 }

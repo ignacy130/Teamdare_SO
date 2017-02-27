@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using Teamdare.Core.Queries;
 using Teamdare.Database.Entities;
 
@@ -18,7 +19,7 @@ namespace Teamdare.Domain.Queries
     {
         public override ChallengeInProgress Perform(ChallengeInProgress query)
         {
-            query.QueryResult = DbContext.Challenges.SingleOrDefault(
+            query.QueryResult = DbContext.Challenges.Include(c => c.Adventure).SingleOrDefault(
                 c => c.Player.UserId == query.UserId && c.Status == ChallengeStatus.InProgress);
 
             return query;

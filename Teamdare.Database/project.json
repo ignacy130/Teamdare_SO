@@ -27,6 +27,8 @@
     "commands": {
         "create-migration": "dotnet ef --startup-project ./../Teamdare.Bot  migrations add __name__",
         "remove-migration": "dotnet ef --startup-project ./../Teamdare.Bot  migrations remove",
-        "apply-migrations-to-db": "dotnet ef --startup-project ./../Teamdare.Bot database update"
+        "apply-migrations-to-db": "dotnet ef --startup-project ./../Teamdare.Bot database update",
+        "revert-migration-to-db": "dotnet ef --startup-project ./../Teamdare.Bot database update __name__",
+        "reset-db": "dotnet ef --startup-project ./../Teamdare.Bot database update 0"
     }
 }

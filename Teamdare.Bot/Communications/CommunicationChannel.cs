@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 
 namespace Teamdare.Bot.Communications
@@ -15,7 +16,9 @@ namespace Teamdare.Bot.Communications
         public async Task Handle(Activity activity)
         {
             var channel = this._communicationChannelMap.Find(activity.GetActivityType());
-            await channel.Handle(activity);
+
+            if (channel != null)
+                await channel.Handle(activity);
         }
     }
 }

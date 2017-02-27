@@ -25,6 +25,7 @@ namespace Teamdare.Domain.Commands
 
             challenge.Status = ChallengeStatus.InProgress;
             challenge.StartDate = DateTimeGetter.GetDateTime();
+            DbContext.SaveChanges();
         }
     }
 }

@@ -18,7 +18,8 @@ namespace Teamdare.Domain.Queries
     {
         public override IsAnyChallengeInProgress Perform(IsAnyChallengeInProgress query)
         {
-            query.QueryResult = Please.Give(new ChallengeInProgress(query.UserId)).QueryResult != null;
+            query.QueryResult = DbContext.Challenges.Any(
+                c => c.Player.UserId == query.UserId && c.Status == ChallengeStatus.InProgress);
 
             return query;
         }

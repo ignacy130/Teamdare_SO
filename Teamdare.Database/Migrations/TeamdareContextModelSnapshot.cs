@@ -2,6 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Teamdare.Database;
+using Teamdare.Database.Entities;
 
 namespace Teamdare.Database.Migrations
 {
@@ -25,11 +28,11 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<string>("FinishedText");
 
-                    b.Property<Guid>("GameMasterId");
-
-                    b.Property<Guid>("PlayerId");
+                    b.Property<Guid?>("GameMasterId");
 
                     b.Property<int>("Order");
+
+                    b.Property<Guid>("PlayerId");
 
                     b.Property<string>("Title");
 
@@ -49,15 +52,13 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<Guid>("AdventureId");
 
-                    b.Property<Guid>("PlayerId");
-
-                    b.Property<bool>("IsCompleted");
-
-                    b.Property<bool>("IsStarted");
-
                     b.Property<int>("Order");
 
+                    b.Property<Guid>("PlayerId");
+
                     b.Property<DateTime>("StartDate");
+
+                    b.Property<int>("Status");
 
                     b.Property<string>("Title");
 
@@ -85,12 +86,6 @@ namespace Teamdare.Database.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("UserId");
-
-                    b.Property<string>("UserNick");
-
-                    b.Property<Guid?>("ChallengeId");
-
                     b.Property<string>("ConversationId");
 
                     b.Property<Guid>("GameMasterId");
@@ -101,9 +96,9 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<string>("ServiceUrl");
 
-                    b.HasKey("Id");
+                    b.Property<string>("UserId");
 
-                    b.HasIndex("ChallengeId");
+                    b.HasKey("Id");
 
                     b.HasIndex("GameMasterId");
 
@@ -115,13 +110,9 @@ namespace Teamdare.Database.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("AdventureId");
+                    b.Property<Guid>("AdventureId");
 
-                    b.Property<Guid?>("AdventureId1");
-
-                    b.Property<int>("PlayerId");
-
-                    b.Property<Guid?>("PlayerId1");
+                    b.Property<Guid>("PlayerId");
 
                     b.Property<string>("Title");
 
@@ -129,19 +120,18 @@ namespace Teamdare.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AdventureId1");
+                    b.HasIndex("AdventureId");
 
-                    b.HasIndex("PlayerId1");
+                    b.HasIndex("PlayerId");
 
                     b.ToTable("Rewards");
                 });
 
             modelBuilder.Entity("Teamdare.Database.Entities.Adventure", b =>
                 {
-                    b.HasOne("Teamdare.Database.Entities.GameMaster", "GameMaster")
+                    b.HasOne("Teamdare.Database.Entities.GameMaster")
                         .WithMany("Adventures")
-                        .HasForeignKey("GameMasterId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("GameMasterId");
 
                     b.HasOne("Teamdare.Database.Entities.Player", "Player")
                         .WithMany("Adventures")
@@ -164,10 +154,6 @@ namespace Teamdare.Database.Migrations
 
             modelBuilder.Entity("Teamdare.Database.Entities.Player", b =>
                 {
-                    b.HasOne("Teamdare.Database.Entities.Challenge")
-                        .WithMany("Participants")
-                        .HasForeignKey("ChallengeId");
-
                     b.HasOne("Teamdare.Database.Entities.GameMaster", "GameMaster")
                         .WithMany("Players")
                         .HasForeignKey("GameMasterId")
@@ -178,11 +164,13 @@ namespace Teamdare.Database.Migrations
                 {
                     b.HasOne("Teamdare.Database.Entities.Adventure", "Adventure")
                         .WithMany()
-                        .HasForeignKey("AdventureId1");
+                        .HasForeignKey("AdventureId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Teamdare.Database.Entities.Player", "Player")
                         .WithMany("Rewards")
-                        .HasForeignKey("PlayerId1");
+                        .HasForeignKey("PlayerId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

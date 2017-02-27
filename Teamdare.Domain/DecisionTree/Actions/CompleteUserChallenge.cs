@@ -33,7 +33,12 @@ namespace Teamdare.Domain.DecisionTree.Actions
 
             yield return reply;
 
-            foreach (var response in new GiveUserChallenge().Evaluate(activity))
+            var giveUserChallengerResponses = new GiveUserChallenge().Evaluate(activity);
+
+            if (giveUserChallengerResponses == null)
+                yield break;
+
+            foreach (var response in giveUserChallengerResponses)
             {
                 yield return response;
             }

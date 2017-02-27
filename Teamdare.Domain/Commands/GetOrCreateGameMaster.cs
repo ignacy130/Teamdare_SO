@@ -19,6 +19,7 @@ namespace Teamdare.Domain.Commands
             {
                 gameMaster = new GameMaster();
                 DbContext.GameMasters.Add(gameMaster);
+                DbContext.SaveChanges();
             }
 
             command.Result = gameMaster;

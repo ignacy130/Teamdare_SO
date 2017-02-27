@@ -80,6 +80,8 @@ namespace Teamdare.Domain.Commands
 
                 CreateChallenges(player, adventure, challanges[i]);
             }
+
+            DbContext.SaveChanges();
         }
 
         private Adventure CreateAdventure(Player player, string title, string finishedMessage, string finishedImageUrl, int order)

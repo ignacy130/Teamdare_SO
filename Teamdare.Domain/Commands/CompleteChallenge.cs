@@ -24,6 +24,7 @@ namespace Teamdare.Domain.Commands
                 return;
 
             challange.Status = ChallengeStatus.Completed;
+            DbContext.SaveChanges();
         }
     }
 }

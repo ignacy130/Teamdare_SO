@@ -11,8 +11,8 @@ namespace Teamdare.Domain.DecisionTree.Queries
         public CheckIfGameShouldBeFinished()
         {
             Test = activity => Please.Check(new IsAnyUnfinishedChallenge(activity.From.Id));
-            Positive = new FinishUserGame();
-            Negative = new CompleteUserChallenge();
+            Positive = new CompleteUserChallenge();
+            Negative = new FinishUserGame();
         }
     }
 }

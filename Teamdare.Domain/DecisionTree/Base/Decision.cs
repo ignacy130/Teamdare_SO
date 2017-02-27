@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Bot.Connector;
 
 namespace Teamdare.Domain.DecisionTree.Base
 {

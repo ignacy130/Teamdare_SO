@@ -39,6 +39,9 @@ namespace Teamdare.Domain.Commands
                     UserId = command.UserId,
                     GameMaster = DbContext.GameMasters.SingleOrDefault(gm => gm.Id == command.GameMasterId)
                 };
+
+                DbContext.Players.Add(player);
+                DbContext.SaveChanges();
             }
 
             command.Result = player;

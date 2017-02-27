@@ -21,7 +21,7 @@ namespace Teamdare.Domain.Queries
     {
         public override IsUserRegistered Perform(IsUserRegistered query)
         {
-            var player = DbContext.Players.Single(x => x.UserId == query.UserId);
+            var player = DbContext.Players.SingleOrDefault(x => x.UserId == query.UserId);
 
             if (player == null)
                 return query;
