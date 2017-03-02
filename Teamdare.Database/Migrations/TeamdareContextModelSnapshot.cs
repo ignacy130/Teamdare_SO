@@ -56,7 +56,7 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<Guid>("PlayerId");
 
-                    b.Property<DateTime>("StartDate");
+                    b.Property<DateTime?>("StartDate");
 
                     b.Property<int>("Status");
 
@@ -86,15 +86,11 @@ namespace Teamdare.Database.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ConversationId");
-
                     b.Property<Guid>("GameMasterId");
 
                     b.Property<int>("Level");
 
                     b.Property<string>("Nick");
-
-                    b.Property<string>("ServiceUrl");
 
                     b.Property<string>("UserId");
 
