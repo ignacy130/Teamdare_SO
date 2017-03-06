@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Teamdare.Database.Migrations
 {
-    public partial class DatabaseBase : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -24,11 +24,9 @@ namespace Teamdare.Database.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    ConversationId = table.Column<string>(nullable: true),
                     GameMasterId = table.Column<Guid>(nullable: false),
                     Level = table.Column<int>(nullable: false),
                     Nick = table.Column<string>(nullable: true),
-                    ServiceUrl = table.Column<string>(nullable: true),
                     UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -80,7 +78,7 @@ namespace Teamdare.Database.Migrations
                     AdventureId = table.Column<Guid>(nullable: false),
                     Order = table.Column<int>(nullable: false),
                     PlayerId = table.Column<Guid>(nullable: false),
-                    StartDate = table.Column<DateTime>(nullable: false),
+                    StartDate = table.Column<DateTime>(nullable: true),
                     Status = table.Column<int>(nullable: false),
                     Title = table.Column<string>(nullable: true)
                 },

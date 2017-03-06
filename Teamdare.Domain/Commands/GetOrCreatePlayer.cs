@@ -34,8 +34,6 @@ namespace Teamdare.Domain.Commands
                 player = new Player()
                 {
                     Nick = command.Username,
-                    ConversationId = command.ConversationId,
-                    ServiceUrl = command.ServiceUrl,
                     UserId = command.UserId,
                     GameMaster = DbContext.GameMasters.SingleOrDefault(gm => gm.Id == command.GameMasterId)
                 };

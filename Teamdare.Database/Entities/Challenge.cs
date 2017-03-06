@@ -5,7 +5,7 @@ namespace Teamdare.Database.Entities
 {
     public class Challenge : Entity
     {
-        public DateTime StartDate { get; set; }
+        public DateTime? StartDate { get; set; }
         public string Title { get; set; }
         public ChallengeStatus Status { get; set; }
         public int Order { get; set; }

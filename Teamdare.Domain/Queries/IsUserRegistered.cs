@@ -23,13 +23,7 @@ namespace Teamdare.Domain.Queries
         {
             var player = DbContext.Players.SingleOrDefault(x => x.UserId == query.UserId);
 
-            if (player == null)
-                return query;
-
-            player.ConversationId = query.ConversationId;
-            player.ServiceUrl = query.ServiceUrl;
-
-            query.QueryResult = true;
+            query.QueryResult = player != null;
 
             return query;
         }
