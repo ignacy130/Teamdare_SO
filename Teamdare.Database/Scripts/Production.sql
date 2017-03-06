@@ -1,5 +1,7 @@
 INSERT INTO public."GameMasters" ("Id") VALUES ('e9c2a2da-2154-4309-98d6-5033d82307fa');
 
+ALTER TABLE public."Players" ADD COLUMN "AppNick" text;
+
 INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('afcc46e3-b117-463d-b63a-03db445ead48', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5iq0dEcbHSL', '5iq0dEcbHSL');
 
 INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('557efd9d-42ba-4615-83b6-06b262f0b23e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Natalia Sarnacka', '1377354885617347', '1377354885617347');
@@ -411,6 +413,10 @@ INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", 
 INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('25d2252e-83c5-4475-aa0e-fc84ef1bbef9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HOn8E4wDlEi', 'HOn8E4wDlEi');
 
 INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('66d0ba29-7220-4029-89ab-fd6c2abd3992', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'A3DPHKaesuP', 'A3DPHKaesuP');
+
+ALTER TABLE public."Players" DROP COLUMN "AppNick";
+
+ALTER TABLE public."Adventures" ADD COLUMN "GameMasterId" uuid;
 
 INSERT INTO public."Adventures" ("Id", "GameMasterId", "PlayerId", "Title", "Description", "Order", "FinishedText", "FinishedImageUrl") VALUES ('7e2fba49-abdc-4939-9ac1-001229de450e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 'dafc1675-ff1c-4a4f-b4dc-400a2f34cd26', 'The New World', NULL, 0, 'Oh, you Columbus! You discoverd a whole new world of mistic company. You will never ever have problems with preparing your fresh lion, resting after and... yeah... you know, the restroom.', 'http://teamdare.azurewebsites.net/img/badge_place.png');
 
@@ -1647,6 +1653,12 @@ INSERT INTO public."Adventures" ("Id", "GameMasterId", "PlayerId", "Title", "Des
 INSERT INTO public."Adventures" ("Id", "GameMasterId", "PlayerId", "Title", "Description", "Order", "FinishedText", "FinishedImageUrl") VALUES ('aa01f2e3-78c2-47c0-9130-fec87fd5dadc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', '7dd7b18c-75d8-4641-8a58-e835d4491dc8', 'Food, fast!', NULL, 1, 'Bravo! You discover food and elixir sources! Now you are fully aware how to gain energy to survive work day.', 'http://teamdare.azurewebsites.net/img/badge_food.png');
 
 INSERT INTO public."Adventures" ("Id", "GameMasterId", "PlayerId", "Title", "Description", "Order", "FinishedText", "FinishedImageUrl") VALUES ('95fd2cca-ceb8-4f26-ab91-fed2afb4ba00', 'e9c2a2da-2154-4309-98d6-5033d82307fa', '8f4bcf61-4475-4d6e-851a-4b6ccaf79227', 'Allyventure', NULL, 2, 'Congratulation! You are in the team! During these challanges you get to know your colleagues, hunted with them and shared best memories!', 'http://teamdare.azurewebsites.net/img/badge_people.png');
+
+ALTER TABLE public."Adventures" DROP COLUMN "GameMasterId" uuid;
+
+ALTER TABLE public."Challenges" ADD COLUMN "IsStarted" integer;
+
+ALTER TABLE public."Challenges" ADD COLUMN "IsCompleted" integer;
 
 INSERT INTO public."Challenges" ("Id", "AdventureId", "Title", "IsCompleted", "IsStarted", "PlayerId", "Order", "StartDate", "Status") VALUES ('2240acda-a9d0-4d61-b042-003f02fd0713', '47aab850-011b-45c8-a182-d543db6f99ae', 'Exegi monumentum
 Now, that you know your colleagues it''s to time be remembered forever! Let''s take a selfie with them!', 0, 0, '2bece62a-fb8c-4228-be9c-849013466a82', 2, NULL, 0);
@@ -7209,3 +7221,10 @@ Talk to the person on your right during break... Yeah, just start with weather! 
 
 INSERT INTO public."Challenges" ("Id", "AdventureId", "Title", "IsCompleted", "IsStarted", "PlayerId", "Order", "StartDate", "Status") VALUES ('45a8a9b0-0dc8-46f0-8858-fffc2859959a', 'b0aeafa9-02b8-431e-93f8-45a5ccca8f66', 'lden intoxicant
 It''s Friday afternoon. If you do''t have plans so may some of your peers. Beer with your new coleagues sounds od, does''t it?', 0, 0, 'f08ec101-bfc7-4f69-b2f3-1bb8044ce1c9', 2, NULL, 0);
+
+UPDATE public."Challenges" SET "Status" = 1 WHERE "IsStarted" = 1;
+UPDATE public."Challenges" SET "Status" = 2 WHERE "IsCompleted" = 1;
+
+ALTER TABLE public."Challenges" DROP COLUMN "IsStarted";
+
+ALTER TABLE public."Challenges" DROP COLUMN "IsCompleted";
