@@ -1,4 +1,4 @@
-﻿{
+{
     "dependencies": {
         "Teamdare.Database": "1.0.0-*",
         "Teamdare.Domain": "1.0.0-*",
@@ -27,10 +27,12 @@
         "Microsoft.EntityFrameworkCore.Design": "1.1.0",
         "Microsoft.AspNet.WebApi.Client": "5.2.3",
         "System.Runtime.Serialization.Xml": "4.1.1",
-        "Microsoft.Bot.Connector": {
-            "include": "all",
-            "version": "3.5.1.0-alpha"
-        }
+      "Microsoft.Bot.Connector": {
+        "include": "all",
+        "version": "3.5.1.0-alpha"
+      },
+      "Hangfire": "1.6.9",
+      "Hangfire.AspNetCore": "1.6.9"
     },
 
     "tools": {
