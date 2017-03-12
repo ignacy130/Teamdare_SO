@@ -9,8 +9,8 @@ using Teamdare.Database.Entities;
 namespace Teamdare.Database.Migrations
 {
     [DbContext(typeof(TeamdareContext))]
-    [Migration("20170227224626_DatabaseBase")]
-    partial class DatabaseBase
+    [Migration("20170302171933_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -57,7 +57,7 @@ namespace Teamdare.Database.Migrations
 
                     b.Property<Guid>("PlayerId");
 
-                    b.Property<DateTime>("StartDate");
+                    b.Property<DateTime?>("StartDate");
 
                     b.Property<int>("Status");
 
@@ -87,15 +87,11 @@ namespace Teamdare.Database.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ConversationId");
-
                     b.Property<Guid>("GameMasterId");
 
                     b.Property<int>("Level");
 
                     b.Property<string>("Nick");
-
-                    b.Property<string>("ServiceUrl");
 
                     b.Property<string>("UserId");
 

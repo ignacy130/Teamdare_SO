@@ -14,8 +14,6 @@ namespace Teamdare.Database.Entities
         public int Level { get; set; }
         public string Nick { get; set; }
         public string UserId { get; set; }
-        public string ConversationId { get; set; }
-        public string ServiceUrl { get; set; }
 
         public Guid GameMasterId { get; set; }
         public GameMaster GameMaster { get; set; }
