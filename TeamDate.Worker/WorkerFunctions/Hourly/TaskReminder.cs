@@ -33,11 +33,11 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
 
         private async void SendReminder(Player user)
         {
-            var connector = new ConnectorClient(new Uri(user.ServiceUrl));
+            var connector = new ConnectorClient(new Uri(user.));
             IMessageActivity newMessage = Activity.CreateMessageActivity();
             newMessage.Type = ActivityTypes.Message;
             newMessage.From = new ChannelAccount("");
-            newMessage.Conversation = new ConversationAccount(false, user.ConversationId, null);
+            newMessage.Conversation = new ConversationAccount(false, user.UserId, null);
             newMessage.Recipient = new ChannelAccount(user.UserId, user.Nick);
             newMessage.Text = "How is your challenge going?";
             await connector.Conversations.SendToConversationAsync((Activity)newMessage);

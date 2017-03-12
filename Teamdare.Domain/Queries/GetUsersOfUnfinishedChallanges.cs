@@ -23,7 +23,8 @@ namespace Teamdare.Domain.Queries
             query.QueryResult = DbContext.Challenges
                 .Where(x =>
                     x.Status == ChallengeStatus.InProgress &&
-                    (DateTime.Now - x.StartDate).Hours <= 24)
+                    (DateTime.Now - x.StartDate)!= null&&
+                    (DateTime.Now - x.StartDate).Value.Hours <= 24)
                 .Select(x => x.Player).ToList();
 
             return query;
