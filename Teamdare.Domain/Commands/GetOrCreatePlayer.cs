@@ -14,6 +14,7 @@ namespace Teamdare.Domain.Commands
             ConversationId = conversationId;
             ServiceUrl = serviceUrl;
             GameMasterId = gameMasterId;
+            ServiceUrl = serviceUrl;
         }
 
         public string Username { get; set; }
@@ -28,6 +29,13 @@ namespace Teamdare.Domain.Commands
         public override void Execute(GetOrCreatePlayer command)
         {
             var player = DbContext.Players.SingleOrDefault(p => p.UserId == command.UserId);
+            if (string.IsNullOrEmpty(player.ServiceUrl) || string.IsNullOrEmpty(player.ConversationId))
+            {
+                player.ServiceUrl = command.ServiceUrl;
+                player.ConversationId = command.ConversationId;
+                DbContext.SaveChanges();
+            }
+
 
             if (player == null)
             {
@@ -35,7 +43,9 @@ namespace Teamdare.Domain.Commands
                 {
                     Nick = command.Username,
                     UserId = command.UserId,
-                    GameMaster = DbContext.GameMasters.SingleOrDefault(gm => gm.Id == command.GameMasterId)
+                    GameMaster = DbContext.GameMasters.SingleOrDefault(gm => gm.Id == command.GameMasterId),
+                    ServiceUrl = command.ServiceUrl,
+                    ConversationId = command.ConversationId
                 };
 
                 DbContext.Players.Add(player);
