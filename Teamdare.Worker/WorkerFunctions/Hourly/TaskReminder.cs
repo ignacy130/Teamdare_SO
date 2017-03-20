@@ -27,23 +27,31 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
 
             foreach (var user in usersToRemind)
             {
+                if (!ShouldSendReminder(user))
+                    continue;
+
                 SendReminder(user);
             }
         }
 
+        private bool ShouldSendReminder(Player user)
+        {
+            if (string.IsNullOrEmpty(user.ServiceUrl) || string.IsNullOrEmpty(user.ConversationId))
+                return false;
+
+            return true;
+        }
+
         private async void SendReminder(Player user)
         {
-            if (!string.IsNullOrEmpty(user.ServiceUrl) && !string.IsNullOrEmpty(user.ConversationId))
-            {
-                var connector = new ConnectorClient(new Uri(user.ServiceUrl));
-                IMessageActivity newMessage = Activity.CreateMessageActivity();
-                newMessage.Type = ActivityTypes.Message;
-                newMessage.From = new ChannelAccount("");
-                newMessage.Conversation = new ConversationAccount(false, user.ConversationId, null);
-                newMessage.Recipient = new ChannelAccount(user.UserId, user.Nick);
-                newMessage.Text = "How is your challenge going?";
-                await connector.Conversations.SendToConversationAsync((Activity)newMessage);
-            }
+            var connector = new ConnectorClient(new Uri(user.ServiceUrl));
+            var newMessage = Activity.CreateMessageActivity();
+            newMessage.Type = ActivityTypes.Message;
+            newMessage.From = new ChannelAccount("");
+            newMessage.Conversation = new ConversationAccount(false, user.ConversationId, null);
+            newMessage.Recipient = new ChannelAccount(user.UserId, user.Nick);
+            newMessage.Text = "How is your challenge going?";
+            await connector.Conversations.SendToConversationAsync((Activity)newMessage);
         }
     }
 }
