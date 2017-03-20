@@ -15,7 +15,7 @@ namespace Teamdare.Domain.DecisionTree.Actions
 
             Please.Do(new CompleteChallenge(challenge.Id));
 
-            var reply = activity.CreateReply($"{Resources.ResourcesStrings.Congratulations} You have finished {challenge.Order + 1}/3 steps of this adventure. ");
+            var reply = activity.CreateReply($"{Resources.ResourcesStrings.Congratulations} {Resources.Emoji.Tada} You have finished {challenge.Order + 1}/3 steps of this adventure. ");
 
             var areAllChallengesFromAdventureFinished =
                 Please.Check(new AreAllChallengesInAdventureFinished(challenge.Adventure.Id));
