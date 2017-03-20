@@ -19,7 +19,10 @@ namespace Teamdare.Domain.DecisionTree.Actions
 
             var content = ResourcesStrings.AdventureNewChallengeForYou + "\"" + challenge.Title + "\"!";
 
-            yield return activity.CreateReply(content);
+			foreach (var item in new List<Activity>() { activity.CreateReply(content), activity.CreateReply(challenge.Description) })
+			{
+				yield return item;
+			}
         }
     }
 }

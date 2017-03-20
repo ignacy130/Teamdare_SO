@@ -41,34 +41,34 @@ namespace Teamdare.Domain.Commands
                     ResourcesStrings.AdventurePlacesAdventureFinished, ResourcesImages.PlacesBadge)
             };
 
-            var challanges = new List<List<string>>()
+            var challanges = new List<List<Tuple<string,string>>>()
             {
-                new List<string>()
+                new List<Tuple<string,string>>()
                 {
-                    ResourcesStrings.AdventureIntroduceYourselfChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureIntroduceYourselfChallengeDescription,
-                    ResourcesStrings.AdventureLunchChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureLunchChallengeDescription,
-                    ResourcesStrings.AdventureSelfieChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureSelfieChallengeDescription
+					new Tuple<string, string>(ResourcesStrings.AdventureIntroduceYourselfChallengeTitle , ResourcesStrings
+                        .AdventureIntroduceYourselfChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.AdventureLunchChallengeTitle, ResourcesStrings
+                        .AdventureLunchChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.AdventureSelfieChallengeTitle, ResourcesStrings
+                        .AdventureSelfieChallengeDescription)
                 },
-                new List<string>()
-                {
-                    ResourcesStrings.AdventureCoffieWithChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureCoffieWithChallengeDescription,
-                    ResourcesStrings.AdventureShopChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureShopChallengeDescription,
-                    ResourcesStrings.AdventureBeerChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureBeerChallengeDescription
+				new List<Tuple<string,string>>()
+				{
+					new Tuple<string, string>(ResourcesStrings.AdventureCoffieWithChallengeTitle , ResourcesStrings
+                        .AdventureCoffieWithChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.AdventureShopChallengeTitle , ResourcesStrings
+                        .AdventureShopChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.AdventureBeerChallengeTitle , ResourcesStrings
+                        .AdventureBeerChallengeDescription)
                 },
-                new List<string>()
-                {
-                    ResourcesStrings.AdventureToiletChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureToiletChallengeDescription,
-                    ResourcesStrings.AdventureRelaxRoomChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureRelaxRoomChallengeDescription,
-                    ResourcesStrings.AdventureKitchenChallengeTitle + Environment.NewLine + ResourcesStrings
-                        .AdventureKitchenChallengeDescription
+				new List<Tuple<string,string>>()
+				{
+					new Tuple<string, string>(ResourcesStrings.AdventureToiletChallengeTitle , ResourcesStrings
+                        .AdventureToiletChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.AdventureRelaxRoomChallengeTitle , ResourcesStrings
+                        .AdventureRelaxRoomChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.AdventureKitchenChallengeTitle , ResourcesStrings
+                        .AdventureKitchenChallengeDescription)
                 }
             };
 
@@ -100,13 +100,14 @@ namespace Teamdare.Domain.Commands
             return adventure;
         }
 
-        private void CreateChallenges(Player player, Adventure adventure, IList<string> titles)
+        private void CreateChallenges(Player player, Adventure adventure, IList<Tuple<string,string>> titles)
         {
             for (var i = 0; i < titles.Count(); i++)
             {
                 var challange = new Challenge()
                 {
-                    Title = titles[i],
+                    Title = titles[i].Item1,
+					Description = titles[i].Item2,
                     Order = i,
                     Adventure = adventure,
                     Player = player
