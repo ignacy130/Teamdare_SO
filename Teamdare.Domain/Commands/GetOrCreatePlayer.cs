@@ -29,11 +29,13 @@ namespace Teamdare.Domain.Commands
         public override void Execute(GetOrCreatePlayer command)
         {
             var player = DbContext.Players.SingleOrDefault(p => p.UserId == command.UserId);
-            if (string.IsNullOrEmpty(player.ServiceUrl) || string.IsNullOrEmpty(player.ConversationId))
+            if (player!=null)
             {
-                player.ServiceUrl = command.ServiceUrl;
-                player.ConversationId = command.ConversationId;
-                DbContext.SaveChanges();
+                if (string.IsNullOrEmpty(player.ServiceUrl) || string.IsNullOrEmpty(player.ConversationId)) {
+                    player.ServiceUrl = command.ServiceUrl;
+                    player.ConversationId = command.ConversationId;
+                    DbContext.SaveChanges();
+                }
             }
 
 
