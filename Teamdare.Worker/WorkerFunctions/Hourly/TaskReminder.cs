@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
+using Teamdare.Connector;
 using Teamdare.Core;
 using Teamdare.Database.Entities;
 using Teamdare.Worker.Interfaces;
@@ -13,17 +10,19 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
 {
     public class TaskReminder : IWorkerExecution
     {
-        private readonly IAssistant assistant;
+        private readonly IAssistant Please;
+        private readonly BotConnector _botConnector;
 
-        public TaskReminder(IAssistant assistant)
+        public TaskReminder(BotConnector botConnector, IAssistant please)
         {
-            this.assistant = assistant;
+            _botConnector = botConnector;
+            Please = please;
         }
 
 
         public void Execute()
         {
-            var usersToRemind = assistant.Give(new GetUsersOfUnfinishedChallanges()).QueryResult;
+            var usersToRemind = Please.Give(new GetUsersOfUnfinishedChallanges()).QueryResult;
 
             foreach (var user in usersToRemind)
             {
@@ -44,14 +43,14 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
 
         private async void SendReminder(Player user)
         {
-            var connector = new ConnectorClient(new Uri(user.ServiceUrl));
             var newMessage = Activity.CreateMessageActivity();
             newMessage.Type = ActivityTypes.Message;
             newMessage.From = new ChannelAccount("");
             newMessage.Conversation = new ConversationAccount(false, user.ConversationId, null);
             newMessage.Recipient = new ChannelAccount(user.UserId, user.Nick);
             newMessage.Text = "How is your challenge going?";
-            await connector.Conversations.SendToConversationAsync((Activity)newMessage);
+
+            await _botConnector.SendToConversationAsync(user.ServiceUrl, (Activity)newMessage);
         }
     }
 }

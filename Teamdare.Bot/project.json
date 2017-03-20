@@ -4,6 +4,7 @@
         "Teamdare.Domain": "1.0.0-*",
         "Teamdare.Core": "1.0.0-*",
         "Teamdare.Worker": "1.0.0-*",
+        "Teamdare.Connector": "1.0.0-*",
         "Microsoft.NETCore.App": {
             "version": "1.1.0",
             "type": "platform"

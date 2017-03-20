@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Teamdare.Core.Queries;
 
 namespace Teamdare.Domain.Queries

@@ -13,6 +13,7 @@ using Teamdare.Domain;
 using Hangfire;
 using Teamdare.Worker.WorkerFunctions.Hourly;
 using Hangfire.MemoryStorage;
+using Teamdare.Connector;
 using Teamdare.Worker;
 
 namespace Teamdare.Bot
@@ -69,6 +70,7 @@ namespace Teamdare.Bot
             builder.RegisterModule<DomainModule>();
             builder.RegisterModule<DatabaseModule>();
             builder.RegisterModule<WorkerModule>();
+            builder.RegisterModule<ConnectorModule>();
 
             builder.Populate(services);
 
@@ -88,8 +90,7 @@ namespace Teamdare.Bot
             app.UseHangfireDashboard();
             app.UseHangfireServer();
 
-            var please = IoC.Resolve<IAssistant>();
-            var taskReminder = new TaskReminder(please);
+            var taskReminder = IoC.Resolve<TaskReminder>();
 
             RecurringJob.AddOrUpdate(
                 () => taskReminder.Execute(), Cron.MinuteInterval(1));

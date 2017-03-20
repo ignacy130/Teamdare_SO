@@ -1,0 +1,24 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+      "NETStandard.Library": "1.6.1",
+      "Autofac.Extensions.DependencyInjection": "4.0.0",
+      "Microsoft.Extensions.Caching.Memory": "1.1.0",
+      "Microsoft.AspNet.WebApi.Client": "5.2.3",
+      "Microsoft.Bot.Connector": {
+          "include": "all",
+          "version": "3.5.1.0-alpha"
+      }
+  },
+  "frameworks": {
+      "netcoreapp1.1": {
+          "imports": [
+              "dotnet5.6",
+              "portable-net45+win8"
+          ]
+      }
+  }
+}
