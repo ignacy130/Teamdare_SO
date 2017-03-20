@@ -7,6 +7,7 @@ using Microsoft.Bot.Connector;
 using Microsoft.Extensions.Caching.Memory;
 using Teamdare.Bot.Authentication;
 using Teamdare.Domain.DecisionTree;
+using System.Linq;
 
 namespace Teamdare.Bot.Communications.Channels
 {
@@ -35,11 +36,19 @@ namespace Teamdare.Bot.Communications.Channels
             {
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                foreach (var response in _decisionTreeHead.Evaluate(activity))
+				var results = _decisionTreeHead.Evaluate(activity).ToList();
+
+				foreach (var response in results)
                 {
-                    await client.PostAsJsonAsync<Activity>(url, response);
-                    //await connector.Conversations.ReplyToActivityAsync(response);
-                }
+					if (response == results.First() || response != results.Last())
+					{
+						var typing = activity.CreateReply();
+						typing.Type = ActivityTypes.Typing;
+						typing.Text = null;
+						await client.PostAsJsonAsync<Activity>(url, typing);
+					}
+					await client.PostAsJsonAsync<Activity>(url, response);
+				}
             }
         }
 
