@@ -6,7 +6,7 @@ namespace Teamdare.Domain.NLP
     {
         public static bool DoesMessageMeanThatUserFinishedPrevChallenge(string message)
         {
-            return message.ToLower().ContainsAny("ok", "done", "finished") && !message.ContainsAny("not ok", "not done", "not finished");
+            return message.ToLower().ContainsAny("ok", "done", "finished", "ready") && !message.ContainsAny("not ok", "not done", "not finished");
         }
 
         public static bool DoesMessageMeanThatUserPostponesChallenge(string message)
