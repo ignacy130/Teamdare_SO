@@ -13,7 +13,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Teamdare.Domain", "Teamdare
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Teamdare.Resources", "Teamdare.Resources\Teamdare.Resources.xproj", "{A31B7670-D6D3-47F1-9B42-1F27DBA28B9C}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TeamDate.Worker", "TeamDate.Worker\TeamDate.Worker.xproj", "{C6BD583E-0142-4F27-A6A4-60FC5E60F828}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Teamdare.Worker", "Teamdare.Worker\Teamdare.Worker.xproj", "{C6BD583E-0142-4F27-A6A4-60FC5E60F828}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

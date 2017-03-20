@@ -13,7 +13,7 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
 {
     public class TaskReminder : IWorkerExecution
     {
-        private IAssistant assistant;
+        private readonly IAssistant assistant;
 
         public TaskReminder(IAssistant assistant)
         {
