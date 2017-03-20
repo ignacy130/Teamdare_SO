@@ -68,7 +68,6 @@ namespace Teamdare.Bot
             builder.RegisterModule<CoreModule>();
             builder.RegisterModule<DomainModule>();
             builder.RegisterModule<DatabaseModule>();
-            builder.RegisterModule<WorkerModule>();
 
             builder.Populate(services);
 
