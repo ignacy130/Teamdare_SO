@@ -1,8 +1,10 @@
-﻿{
+{
     "dependencies": {
         "Teamdare.Database": "1.0.0-*",
         "Teamdare.Domain": "1.0.0-*",
         "Teamdare.Core": "1.0.0-*",
+        "Teamdare.Worker": "1.0.0-*",
+        "Teamdare.Connector": "1.0.0-*",
         "Microsoft.NETCore.App": {
             "version": "1.1.0",
             "type": "platform"
@@ -30,7 +32,10 @@
         "Microsoft.Bot.Connector": {
             "include": "all",
             "version": "3.5.1.0-alpha"
-        }
+        },
+        "Hangfire": "1.6.9",
+        "Hangfire.AspNetCore": "1.6.9",
+        "Hangfire.MemoryStorage": "1.5.0"
     },
 
     "tools": {

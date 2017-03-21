@@ -7,13 +7,15 @@ namespace Teamdare.Domain.Commands
 {
     public class GetOrCreatePlayer : CommandResult<Player>
     {
-        public GetOrCreatePlayer(string username, string userId, string conversationId, string serviceUrl, Guid gameMasterId)
+        public GetOrCreatePlayer(string username, string userId, string conversationId, string serviceUrl,
+            Guid gameMasterId)
         {
             Username = username;
             UserId = userId;
             ConversationId = conversationId;
             ServiceUrl = serviceUrl;
             GameMasterId = gameMasterId;
+            ServiceUrl = serviceUrl;
         }
 
         public string Username { get; set; }
@@ -35,7 +37,9 @@ namespace Teamdare.Domain.Commands
                 {
                     Nick = command.Username,
                     UserId = command.UserId,
-                    GameMaster = DbContext.GameMasters.SingleOrDefault(gm => gm.Id == command.GameMasterId)
+                    GameMaster = DbContext.GameMasters.SingleOrDefault(gm => gm.Id == command.GameMasterId),
+                    ServiceUrl = command.ServiceUrl,
+                    ConversationId = command.ConversationId
                 };
 
                 DbContext.Players.Add(player);

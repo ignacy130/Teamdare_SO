@@ -2,417 +2,417 @@ INSERT INTO public."GameMasters" ("Id") VALUES ('e9c2a2da-2154-4309-98d6-5033d82
 
 ALTER TABLE public."Players" ADD COLUMN "AppNick" text;
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('afcc46e3-b117-463d-b63a-03db445ead48', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5iq0dEcbHSL', '5iq0dEcbHSL');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('afcc46e3-b117-463d-b63a-03db445ead48', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5iq0dEcbHSL', '5iq0dEcbHSL','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('557efd9d-42ba-4615-83b6-06b262f0b23e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Natalia Sarnacka', '1377354885617347', '1377354885617347');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('557efd9d-42ba-4615-83b6-06b262f0b23e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Natalia Sarnacka', '1377354885617347', '1377354885617347','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d2004b88-aadb-45f6-b08a-07ad55585492', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Capn Crunch', '1059554874169949', '1059554874169949');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d2004b88-aadb-45f6-b08a-07ad55585492', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Capn Crunch', '1059554874169949', '1059554874169949','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('72a393ac-02cc-45f8-acfb-07c302e0f5ba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3V0j3XOFwQo', '3V0j3XOFwQo');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('72a393ac-02cc-45f8-acfb-07c302e0f5ba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3V0j3XOFwQo', '3V0j3XOFwQo','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('bcb79d5d-ba3f-4341-a508-07dcefd0c33f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('bcb79d5d-ba3f-4341-a508-07dcefd0c33f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fc20e8c7-57b7-4f5a-8f7b-0a07764c5121', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User1343', 'b69c8995', 'b69c8995');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fc20e8c7-57b7-4f5a-8f7b-0a07764c5121', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User1343', 'b69c8995', 'b69c8995','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1e1fa759-491f-4dd5-8560-0a5535e88c75', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sadas', '5cbc0728', '5cbc0728');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1e1fa759-491f-4dd5-8560-0a5535e88c75', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sadas', '5cbc0728', '5cbc0728','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('a0efa988-970c-4d55-94cb-0ad00681223e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FwIOb9Lj49i', 'FwIOb9Lj49i');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('a0efa988-970c-4d55-94cb-0ad00681223e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FwIOb9Lj49i', 'FwIOb9Lj49i','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5e66812c-12a5-481a-875e-0bfc8b651fe3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Hd01YyBNJpA', 'Hd01YyBNJpA');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5e66812c-12a5-481a-875e-0bfc8b651fe3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Hd01YyBNJpA', 'Hd01YyBNJpA','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('48b9566b-72ed-44a5-ac70-0c28482d6e86', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6eVgQgRl92k', '6eVgQgRl92k');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('48b9566b-72ed-44a5-ac70-0c28482d6e86', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6eVgQgRl92k', '6eVgQgRl92k','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('3899e9cc-d91c-4e46-b6c6-0d1804725b2d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Tien Le', '1226357067402064', '1226357067402064');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('3899e9cc-d91c-4e46-b6c6-0d1804725b2d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Tien Le', '1226357067402064', '1226357067402064','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1e462edb-9f74-4c64-93db-0dc6bbca860b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '92C7rNVrGHk', '92C7rNVrGHk');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1e462edb-9f74-4c64-93db-0dc6bbca860b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '92C7rNVrGHk', '92C7rNVrGHk','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('91c9f7aa-ba03-4d55-b887-0e8a38a74cf8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Darek Phạm', '1322196281185941', '1322196281185941');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('91c9f7aa-ba03-4d55-b887-0e8a38a74cf8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Darek Phạm', '1322196281185941', '1322196281185941','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f85e0af3-e5f4-4197-8685-0ecf24fe11bf', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7M8VFgqjsoh', '7M8VFgqjsoh');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f85e0af3-e5f4-4197-8685-0ecf24fe11bf', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7M8VFgqjsoh', '7M8VFgqjsoh','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('13755bbf-5c9b-411f-9256-0f37c895ebae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'BZLUSS4VPre', 'BZLUSS4VPre');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('13755bbf-5c9b-411f-9256-0f37c895ebae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'BZLUSS4VPre', 'BZLUSS4VPre','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e586648d-69e9-45d5-b970-1156dbbe530c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'DC3DInxHS7f', 'DC3DInxHS7f');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e586648d-69e9-45d5-b970-1156dbbe530c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'DC3DInxHS7f', 'DC3DInxHS7f','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('229b2b29-1276-4817-b1bc-11803553f2de', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6hq4qBWTzJ', '6hq4qBWTzJ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('229b2b29-1276-4817-b1bc-11803553f2de', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6hq4qBWTzJ', '6hq4qBWTzJ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6b6e803b-8eb8-47a2-8c97-11d53be706ae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KDXCANcqkfP', 'KDXCANcqkfP');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6b6e803b-8eb8-47a2-8c97-11d53be706ae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KDXCANcqkfP', 'KDXCANcqkfP','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fb9f7d81-2813-4756-8851-126c75ae11eb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Jvnk4aPKwH2', 'Jvnk4aPKwH2');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fb9f7d81-2813-4756-8851-126c75ae11eb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Jvnk4aPKwH2', 'Jvnk4aPKwH2','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('3f40d265-9df3-41ec-b963-1310d468c56c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9DVsivrKoty', '9DVsivrKoty');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('3f40d265-9df3-41ec-b963-1310d468c56c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9DVsivrKoty', '9DVsivrKoty','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e3950bd7-c6fe-492b-bb47-13199a46e604', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '8Y6pyCjetq0', '8Y6pyCjetq0');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e3950bd7-c6fe-492b-bb47-13199a46e604', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '8Y6pyCjetq0', '8Y6pyCjetq0','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d5c9f6a2-6e43-4d93-8edb-13bc492f0c89', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9PSZl1KsvkF', '9PSZl1KsvkF');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d5c9f6a2-6e43-4d93-8edb-13bc492f0c89', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9PSZl1KsvkF', '9PSZl1KsvkF','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ee5151c1-7e21-4107-ab6d-1432f3a57e91', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Ecm7e88hefs', 'Ecm7e88hefs');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ee5151c1-7e21-4107-ab6d-1432f3a57e91', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Ecm7e88hefs', 'Ecm7e88hefs','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fe4e0f6e-6c3b-4e11-958b-148bc5f31def', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IYWv00aE3cp', 'IYWv00aE3cp');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fe4e0f6e-6c3b-4e11-958b-148bc5f31def', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IYWv00aE3cp', 'IYWv00aE3cp','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('27c192ee-bf35-4ff9-be68-1765e0f8b172', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FM58O3Vbakk', 'FM58O3Vbakk');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('27c192ee-bf35-4ff9-be68-1765e0f8b172', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FM58O3Vbakk', 'FM58O3Vbakk','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f08ec101-bfc7-4f69-b2f3-1bb8044ce1c9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FfyptqSR4e9', 'FfyptqSR4e9');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f08ec101-bfc7-4f69-b2f3-1bb8044ce1c9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FfyptqSR4e9', 'FfyptqSR4e9','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fe262640-46bb-4e3b-aa7d-1c6020619ec5', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7r352MfZ3Ow', '7r352MfZ3Ow');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fe262640-46bb-4e3b-aa7d-1c6020619ec5', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7r352MfZ3Ow', '7r352MfZ3Ow','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5837e38d-79d4-4f5d-8393-1eae76e37622', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'CyLluUQJ2Wm', 'CyLluUQJ2Wm');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5837e38d-79d4-4f5d-8393-1eae76e37622', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'CyLluUQJ2Wm', 'CyLluUQJ2Wm','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('aae739de-e9a7-4fb5-a0e8-1f33dd5980cb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7SD6x9PCjF7', '7SD6x9PCjF7');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('aae739de-e9a7-4fb5-a0e8-1f33dd5980cb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7SD6x9PCjF7', '7SD6x9PCjF7','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('86c9770c-e516-47cb-9a87-21084b569fb8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6MORtYEQEMX', '6MORtYEQEMX');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('86c9770c-e516-47cb-9a87-21084b569fb8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6MORtYEQEMX', '6MORtYEQEMX','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('07d6e9c5-50ae-410c-a322-229126bdc069', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Lw4bA5F5wIg', 'Lw4bA5F5wIg');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('07d6e9c5-50ae-410c-a322-229126bdc069', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Lw4bA5F5wIg', 'Lw4bA5F5wIg','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4e7ca72c-c018-4508-a601-23ade678b888', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7g42VOaFXU0', '7g42VOaFXU0');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4e7ca72c-c018-4508-a601-23ade678b888', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7g42VOaFXU0', '7g42VOaFXU0','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('19dece78-159d-43af-bdc5-24da1d8ba84e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3K5acPT7Sew', '3K5acPT7Sew');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('19dece78-159d-43af-bdc5-24da1d8ba84e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3K5acPT7Sew', '3K5acPT7Sew','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('8a9934dc-2e83-4ddc-971b-256a822a3174', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GRD4WyA1mfk', 'GRD4WyA1mfk');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('8a9934dc-2e83-4ddc-971b-256a822a3174', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GRD4WyA1mfk', 'GRD4WyA1mfk','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('318ea5d5-59d3-40d6-8f59-26bfe82c74ad', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FRnmxIsDjCR', 'FRnmxIsDjCR');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('318ea5d5-59d3-40d6-8f59-26bfe82c74ad', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FRnmxIsDjCR', 'FRnmxIsDjCR','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e17a6bde-6a0d-41b5-83c7-2b37c3cfed19', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IfrxL6zm1h1', 'IfrxL6zm1h1');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e17a6bde-6a0d-41b5-83c7-2b37c3cfed19', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IfrxL6zm1h1', 'IfrxL6zm1h1','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c8545442-83a5-40af-b18c-2b99302e1c7b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Ee3AyrLJ4v1', 'Ee3AyrLJ4v1');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c8545442-83a5-40af-b18c-2b99302e1c7b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Ee3AyrLJ4v1', 'Ee3AyrLJ4v1','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('0e6709b0-7416-4cc9-a288-2c24ace80fb5', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'F7JODuepVP8', 'F7JODuepVP8');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('0e6709b0-7416-4cc9-a288-2c24ace80fb5', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'F7JODuepVP8', 'F7JODuepVP8','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fb308a61-1c5d-4adc-bce8-2daa1faf80f1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6du5LffVH4x', '6du5LffVH4x');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fb308a61-1c5d-4adc-bce8-2daa1faf80f1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6du5LffVH4x', '6du5LffVH4x','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c6350230-6f6f-4106-bd7f-2eb0ec833fba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1vyXDn9KzYk', '1vyXDn9KzYk');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c6350230-6f6f-4106-bd7f-2eb0ec833fba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1vyXDn9KzYk', '1vyXDn9KzYk','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5d317dec-15ba-4043-b2a5-2f5aa8538dae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HaAv9grx6hC', 'HaAv9grx6hC');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5d317dec-15ba-4043-b2a5-2f5aa8538dae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HaAv9grx6hC', 'HaAv9grx6hC','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e24d9287-fbec-4901-ae21-3396ef1446c2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'C0vbwwofIqG', 'C0vbwwofIqG');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e24d9287-fbec-4901-ae21-3396ef1446c2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'C0vbwwofIqG', 'C0vbwwofIqG','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('26420fb8-46ba-4722-b380-33ce288cbb74', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6OKV6XKfEbs', '6OKV6XKfEbs');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('26420fb8-46ba-4722-b380-33ce288cbb74', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6OKV6XKfEbs', '6OKV6XKfEbs','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('88600b57-b230-4951-acbd-3492db3d6ea4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '471XU4e7j8S', '471XU4e7j8S');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('88600b57-b230-4951-acbd-3492db3d6ea4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '471XU4e7j8S', '471XU4e7j8S','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f178dd79-8e76-4b5a-9ca6-3505b0bcd40d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Kgj8fSLs842', 'Kgj8fSLs842');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f178dd79-8e76-4b5a-9ca6-3505b0bcd40d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Kgj8fSLs842', 'Kgj8fSLs842','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('18f47572-3139-412a-b762-39ae81e9090a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'fdsfsdf', '416a9300', '416a9300');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('18f47572-3139-412a-b762-39ae81e9090a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'fdsfsdf', '416a9300', '416a9300','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('0492b10e-2c2f-4784-8aff-3a64e3bb904e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'hghg', 'bfa7d57a', 'bfa7d57a');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('0492b10e-2c2f-4784-8aff-3a64e3bb904e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'hghg', 'bfa7d57a', 'bfa7d57a','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b3352c13-0c87-4935-9113-3db4935d5e15', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User7781', '3fb000df', '3fb000df');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b3352c13-0c87-4935-9113-3db4935d5e15', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User7781', '3fb000df', '3fb000df','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('0754866f-af8c-471c-9c3e-3e1ee858efdc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9dm2UMwibQZ', '9dm2UMwibQZ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('0754866f-af8c-471c-9c3e-3e1ee858efdc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9dm2UMwibQZ', '9dm2UMwibQZ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('99d7099a-c112-4f3d-9f0d-3f469e21f9f5', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'ETRubuZwrPm', 'ETRubuZwrPm');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('99d7099a-c112-4f3d-9f0d-3f469e21f9f5', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'ETRubuZwrPm', 'ETRubuZwrPm','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('dafc1675-ff1c-4a4f-b4dc-400a2f34cd26', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FIxsDPQgQoz', 'FIxsDPQgQoz');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('dafc1675-ff1c-4a4f-b4dc-400a2f34cd26', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FIxsDPQgQoz', 'FIxsDPQgQoz','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('40d6b7c4-d3a9-42eb-a658-41e6bd855efc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1KOHHMiMvhI', '1KOHHMiMvhI');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('40d6b7c4-d3a9-42eb-a658-41e6bd855efc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1KOHHMiMvhI', '1KOHHMiMvhI','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('922fa234-c523-494e-a4b2-4250cf2a6dca', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Hz9lLA4pP20', 'Hz9lLA4pP20');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('922fa234-c523-494e-a4b2-4250cf2a6dca', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Hz9lLA4pP20', 'Hz9lLA4pP20','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1cc62e19-e426-43f4-85c4-431ecb19462e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5sRxP9Ngg4U', '5sRxP9Ngg4U');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1cc62e19-e426-43f4-85c4-431ecb19462e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5sRxP9Ngg4U', '5sRxP9Ngg4U','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fc8d6a11-bcc9-4712-b98c-451641908e09', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GUFsVH8b46K', 'GUFsVH8b46K');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fc8d6a11-bcc9-4712-b98c-451641908e09', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GUFsVH8b46K', 'GUFsVH8b46K','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('8f5ee40e-e6e3-4494-bc2d-472e3bc07196', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'K8BRciXtI7J', 'K8BRciXtI7J');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('8f5ee40e-e6e3-4494-bc2d-472e3bc07196', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'K8BRciXtI7J', 'K8BRciXtI7J','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('a7b181ed-8309-4793-b5a4-487408e3cbd7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JDl4tMFfxdf', 'JDl4tMFfxdf');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('a7b181ed-8309-4793-b5a4-487408e3cbd7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JDl4tMFfxdf', 'JDl4tMFfxdf','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('8f4bcf61-4475-4d6e-851a-4b6ccaf79227', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'D1qrsbSiDKd', 'D1qrsbSiDKd');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('8f4bcf61-4475-4d6e-851a-4b6ccaf79227', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'D1qrsbSiDKd', 'D1qrsbSiDKd','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('63e6df83-2e96-4962-b3c6-4c00f6be318b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2SttXk5b99t', '2SttXk5b99t');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('63e6df83-2e96-4962-b3c6-4c00f6be318b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2SttXk5b99t', '2SttXk5b99t','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4a317565-ab36-41a2-97d2-4e322d2e7295', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KoCGpNFT43j', 'KoCGpNFT43j');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4a317565-ab36-41a2-97d2-4e322d2e7295', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KoCGpNFT43j', 'KoCGpNFT43j','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4863059a-efaf-4807-a806-4eb4afded1f2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5Ge4EuF7Wqb', '5Ge4EuF7Wqb');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4863059a-efaf-4807-a806-4eb4afded1f2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5Ge4EuF7Wqb', '5Ge4EuF7Wqb','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b59ce2ee-4ae2-4f9e-a3bb-4ecfe68e97ec', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Piotr Księżopolski', '1194294520659459', '1194294520659459');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b59ce2ee-4ae2-4f9e-a3bb-4ecfe68e97ec', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Piotr Księżopolski', '1194294520659459', '1194294520659459','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e564de89-1cb7-4033-a4bf-50d2d6467d92', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Big Jack', '1186082774809686', '1186082774809686');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e564de89-1cb7-4033-a4bf-50d2d6467d92', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Big Jack', '1186082774809686', '1186082774809686','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('529624de-05b1-4f71-99ae-513b46cc6b42', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'D5W5q6ufOmZ', 'D5W5q6ufOmZ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('529624de-05b1-4f71-99ae-513b46cc6b42', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'D5W5q6ufOmZ', 'D5W5q6ufOmZ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6219f636-0eb4-4a20-91ce-536b9968d2e9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LYof8ZJ7cja', 'LYof8ZJ7cja');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6219f636-0eb4-4a20-91ce-536b9968d2e9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LYof8ZJ7cja', 'LYof8ZJ7cja','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('70adcd3d-fea5-4c44-ae3e-5460f26bff5b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'BC6T1vyiyQF', 'BC6T1vyiyQF');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('70adcd3d-fea5-4c44-ae3e-5460f26bff5b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'BC6T1vyiyQF', 'BC6T1vyiyQF','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ba8a5076-14a4-4176-825d-55b186a35641', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Ilan Kasa', '996369663801828', '996369663801828');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ba8a5076-14a4-4176-825d-55b186a35641', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Ilan Kasa', '996369663801828', '996369663801828','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('43cff906-f436-4210-949a-55c913f52e19', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '311sGDYpTiG', '311sGDYpTiG');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('43cff906-f436-4210-949a-55c913f52e19', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '311sGDYpTiG', '311sGDYpTiG','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ce94a8f2-f455-44bf-8c13-5775b62477ab', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '4JY0IjMHdFh', '4JY0IjMHdFh');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ce94a8f2-f455-44bf-8c13-5775b62477ab', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '4JY0IjMHdFh', '4JY0IjMHdFh','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6e9679bd-d00a-496d-a39c-57c3c9603b72', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '4wX38eDFRaf', '4wX38eDFRaf');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6e9679bd-d00a-496d-a39c-57c3c9603b72', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '4wX38eDFRaf', '4wX38eDFRaf','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('2c0f0d33-20db-425e-9b22-5880ef6612dc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9G66nZHiJQE', '9G66nZHiJQE');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('2c0f0d33-20db-425e-9b22-5880ef6612dc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9G66nZHiJQE', '9G66nZHiJQE','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9b24a56d-0e20-4d42-bdd2-5aec5eb336b1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7mpZhiujJap', '7mpZhiujJap');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9b24a56d-0e20-4d42-bdd2-5aec5eb336b1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7mpZhiujJap', '7mpZhiujJap','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9de50ecc-43b0-447f-96e4-5c0d714d40fb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2g8WxCz2D50', '2g8WxCz2D50');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9de50ecc-43b0-447f-96e4-5c0d714d40fb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2g8WxCz2D50', '2g8WxCz2D50','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7ddbc1b4-6825-4bc4-bba7-5c5b9eacdf45', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'H70Y4C5K8gQ', 'H70Y4C5K8gQ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7ddbc1b4-6825-4bc4-bba7-5c5b9eacdf45', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'H70Y4C5K8gQ', 'H70Y4C5K8gQ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('43ae06c0-2a72-498f-832c-5c6c4a706418', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HKaWUxFkUWz', 'HKaWUxFkUWz');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('43ae06c0-2a72-498f-832c-5c6c4a706418', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HKaWUxFkUWz', 'HKaWUxFkUWz','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fcb047ab-1274-410a-b43f-5d4fd429d2e3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7POo74WUlNs', '7POo74WUlNs');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fcb047ab-1274-410a-b43f-5d4fd429d2e3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7POo74WUlNs', '7POo74WUlNs','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('02070c8b-550c-4e19-8de9-5dd6ae401245', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'asdasdaw', 'dc82b67', 'dc82b67');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('02070c8b-550c-4e19-8de9-5dd6ae401245', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'asdasdaw', 'dc82b67', 'dc82b67','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e1f22a37-5198-4f00-9745-6103e8438922', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KjWDQK96pF0', 'KjWDQK96pF0');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e1f22a37-5198-4f00-9745-6103e8438922', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KjWDQK96pF0', 'KjWDQK96pF0','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('2aaf8eb5-b704-4c42-bdc9-618879c9086b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GbsMhA2SqoU', 'GbsMhA2SqoU');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('2aaf8eb5-b704-4c42-bdc9-618879c9086b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GbsMhA2SqoU', 'GbsMhA2SqoU','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5b363251-c931-46d4-af55-6290167891a1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HVIRoZmWUGq', 'HVIRoZmWUGq');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5b363251-c931-46d4-af55-6290167891a1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HVIRoZmWUGq', 'HVIRoZmWUGq','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5a8a8900-abe6-4043-8120-63e295ec7891', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Ef04spusmRm', 'Ef04spusmRm');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5a8a8900-abe6-4043-8120-63e295ec7891', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Ef04spusmRm', 'Ef04spusmRm','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6f03e5a7-bf07-488c-bd9c-6495ca408db7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HY32upfPyYP', 'HY32upfPyYP');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6f03e5a7-bf07-488c-bd9c-6495ca408db7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HY32upfPyYP', 'HY32upfPyYP','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('0046d486-7365-407e-9ba0-652ff731388f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HVyn9AS4da7', 'HVyn9AS4da7');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('0046d486-7365-407e-9ba0-652ff731388f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HVyn9AS4da7', 'HVyn9AS4da7','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c397f33f-63ab-44d0-8c0d-67e9a0310f8e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '19Od3E7XIW9', '19Od3E7XIW9');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c397f33f-63ab-44d0-8c0d-67e9a0310f8e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '19Od3E7XIW9', '19Od3E7XIW9','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6b2e2a01-afc1-4b80-888d-68060f368cbe', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Avi Ben Yossef', '1256197437756723', '1256197437756723');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6b2e2a01-afc1-4b80-888d-68060f368cbe', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Avi Ben Yossef', '1256197437756723', '1256197437756723','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('59d512eb-f69f-4329-b783-69d7b265d88c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Amotz Hoshe', '1273563516040636', '1273563516040636');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('59d512eb-f69f-4329-b783-69d7b265d88c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Amotz Hoshe', '1273563516040636', '1273563516040636','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('fec92a67-7e7d-4ea9-9d3a-6a113b4326a4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', 'JqBbVJEFzES', 'JqBbVJEFzES');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('fec92a67-7e7d-4ea9-9d3a-6a113b4326a4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', 'JqBbVJEFzES', 'JqBbVJEFzES','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1e542492-3d1d-4bc6-8d5e-6bbd1b569719', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Paweł Sygnowski', '1152614388170198', '1152614388170198');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1e542492-3d1d-4bc6-8d5e-6bbd1b569719', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Paweł Sygnowski', '1152614388170198', '1152614388170198','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('dd36b045-7733-4216-adeb-6efae6f4dfcc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Wilczyński Ignacy', '29:1xaRD8YFGcjxuX8sQlgrE0qXAjthPHrKs4IXtnYRuj5Y', '29:1xaRD8YFGcjxuX8sQlgrE0qXAjthPHrKs4IXtnYRuj5Y');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('dd36b045-7733-4216-adeb-6efae6f4dfcc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Wilczyński Ignacy', '29:1xaRD8YFGcjxuX8sQlgrE0qXAjthPHrKs4IXtnYRuj5Y', '29:1xaRD8YFGcjxuX8sQlgrE0qXAjthPHrKs4IXtnYRuj5Y','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('43039198-6c5e-4fcc-8778-70b93c038064', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'AkbXQgZcjzU', 'AkbXQgZcjzU');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('43039198-6c5e-4fcc-8778-70b93c038064', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'AkbXQgZcjzU', 'AkbXQgZcjzU','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('315cdde4-99cc-4f6c-a783-70c64d4d4d36', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Kyi2if0Xguq', 'Kyi2if0Xguq');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('315cdde4-99cc-4f6c-a783-70c64d4d4d36', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Kyi2if0Xguq', 'Kyi2if0Xguq','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('75d557f7-675c-4f60-8f46-70ff55b1d1e9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'gM5vjJ5ZyR', 'gM5vjJ5ZyR');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('75d557f7-675c-4f60-8f46-70ff55b1d1e9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'gM5vjJ5ZyR', 'gM5vjJ5ZyR','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('59f6e041-5b29-4fef-a5b7-7322ac957ff3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', '2pFtsp0eL2G', '2pFtsp0eL2G');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('59f6e041-5b29-4fef-a5b7-7322ac957ff3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', '2pFtsp0eL2G', '2pFtsp0eL2G','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f5546a02-1ecf-4b9d-af62-75fbb59c53f8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'E6uQg7wWUfw', 'E6uQg7wWUfw');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f5546a02-1ecf-4b9d-af62-75fbb59c53f8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'E6uQg7wWUfw', 'E6uQg7wWUfw','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('671ca2a9-2aef-47c8-b6d4-77afd6e82d41', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HJQEOR0rVU9', 'HJQEOR0rVU9');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('671ca2a9-2aef-47c8-b6d4-77afd6e82d41', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HJQEOR0rVU9', 'HJQEOR0rVU9','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('449254ef-65d6-4803-803f-78b68743dcd6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User', 'default-user', 'default-user');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('449254ef-65d6-4803-803f-78b68743dcd6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User', 'default-user', 'default-user','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('973caadc-706b-4203-8b1e-79114ef80597', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Itay4yfHnmi', 'Itay4yfHnmi');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('973caadc-706b-4203-8b1e-79114ef80597', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Itay4yfHnmi', 'Itay4yfHnmi','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('219fd7bf-88f6-4701-95f5-79a9d97662fe', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('219fd7bf-88f6-4701-95f5-79a9d97662fe', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('a989061c-cca4-4b07-bf04-7cf4eea45ab8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FpiNzAD2wPs', 'FpiNzAD2wPs');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('a989061c-cca4-4b07-bf04-7cf4eea45ab8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FpiNzAD2wPs', 'FpiNzAD2wPs','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4010760c-a3cb-44b5-862f-8032cbba2d28', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JhIwDMzpn3v', 'JhIwDMzpn3v');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4010760c-a3cb-44b5-862f-8032cbba2d28', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JhIwDMzpn3v', 'JhIwDMzpn3v','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('395d409c-de45-4b20-a6f2-80dd588e5e9c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GJ7Lv8YfHZr', 'GJ7Lv8YfHZr');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('395d409c-de45-4b20-a6f2-80dd588e5e9c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GJ7Lv8YfHZr', 'GJ7Lv8YfHZr','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b46a5cf8-60a5-4817-ab77-8327ec42351d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LEkyTxcMPAL', 'LEkyTxcMPAL');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b46a5cf8-60a5-4817-ab77-8327ec42351d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LEkyTxcMPAL', 'LEkyTxcMPAL','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('2bece62a-fb8c-4228-be9c-849013466a82', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'EEK2TkgDVb8', 'EEK2TkgDVb8');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('2bece62a-fb8c-4228-be9c-849013466a82', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'EEK2TkgDVb8', 'EEK2TkgDVb8','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7a42706b-4881-4e63-9969-86c8fd8754ea', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Dp3kUsecPKg', 'Dp3kUsecPKg');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7a42706b-4881-4e63-9969-86c8fd8754ea', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Dp3kUsecPKg', 'Dp3kUsecPKg','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('136f1096-4637-4d7c-8029-86fd65dfb28f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('136f1096-4637-4d7c-8029-86fd65dfb28f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ad9784c3-ae73-4a32-99b2-88073083d2f7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7lBSFCbV5hp', '7lBSFCbV5hp');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ad9784c3-ae73-4a32-99b2-88073083d2f7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7lBSFCbV5hp', '7lBSFCbV5hp','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c94b9cac-20a0-4582-b66f-8dcf76c994ca', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '87tQ1xYDGyf', '87tQ1xYDGyf');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c94b9cac-20a0-4582-b66f-8dcf76c994ca', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '87tQ1xYDGyf', '87tQ1xYDGyf','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7dbaa907-b80f-413f-808d-8ed8fbdc8640', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'A6mc7qh5wHk', 'A6mc7qh5wHk');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7dbaa907-b80f-413f-808d-8ed8fbdc8640', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'A6mc7qh5wHk', 'A6mc7qh5wHk','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('42d8b641-2a51-4a66-b4ba-8f1ba32bd6ba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'E8GM5CRoG3o', 'E8GM5CRoG3o');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('42d8b641-2a51-4a66-b4ba-8f1ba32bd6ba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'E8GM5CRoG3o', 'E8GM5CRoG3o','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1b974330-d1a8-49d8-98b4-90695c63d143', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Amotz Hoshe', '1273563516040636', '1273563516040636');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1b974330-d1a8-49d8-98b4-90695c63d143', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Amotz Hoshe', '1273563516040636', '1273563516040636','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('289e859f-cef9-4a67-a826-90c39c2021bc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('289e859f-cef9-4a67-a826-90c39c2021bc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('56d76eed-6399-4c3c-a9ca-91ea84cae769', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', 'FAZtiHJqGS6', 'FAZtiHJqGS6');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('56d76eed-6399-4c3c-a9ca-91ea84cae769', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', 'FAZtiHJqGS6', 'FAZtiHJqGS6','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f2654913-66e7-45ad-8059-94e5746ad111', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2r8PMhcBlvx', '2r8PMhcBlvx');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f2654913-66e7-45ad-8059-94e5746ad111', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2r8PMhcBlvx', '2r8PMhcBlvx','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('58d17b8a-af12-418c-ac55-95d67cf8caae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User', 'default-user', 'default-user');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('58d17b8a-af12-418c-ac55-95d67cf8caae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User', 'default-user', 'default-user','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('172b37e2-8bbb-4531-99fc-95dd8d05710f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1DD5LFZ8IUB', '1DD5LFZ8IUB');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('172b37e2-8bbb-4531-99fc-95dd8d05710f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1DD5LFZ8IUB', '1DD5LFZ8IUB','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7643866b-00c0-46d5-b319-96e761936af4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IEpEXexGsAf', 'IEpEXexGsAf');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7643866b-00c0-46d5-b319-96e761936af4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IEpEXexGsAf', 'IEpEXexGsAf','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7c021183-5996-4739-b097-9a65d534b395', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LbqMfhokofA', 'LbqMfhokofA');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7c021183-5996-4739-b097-9a65d534b395', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LbqMfhokofA', 'LbqMfhokofA','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('944c6553-3037-4aeb-96d5-9ab3eb34f650', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JL8pHuYxQBO', 'JL8pHuYxQBO');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('944c6553-3037-4aeb-96d5-9ab3eb34f650', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JL8pHuYxQBO', 'JL8pHuYxQBO','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('90c2ee47-6f0f-4a9c-85ad-9bf45122c256', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User231', 'd973e767', 'd973e767');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('90c2ee47-6f0f-4a9c-85ad-9bf45122c256', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User231', 'd973e767', 'd973e767','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('99eea031-abb8-45df-aa35-9d4a51f9cfb4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'ignacy', 'U35ELLF0F:T3431JW9E', 'U35ELLF0F:T3431JW9E');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('99eea031-abb8-45df-aa35-9d4a51f9cfb4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'ignacy', 'U35ELLF0F:T3431JW9E', 'U35ELLF0F:T3431JW9E','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('cdc133ce-eb14-4a2c-a6f7-9d74ca2d4a64', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IuXDvsnWHDY', 'IuXDvsnWHDY');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('cdc133ce-eb14-4a2c-a6f7-9d74ca2d4a64', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IuXDvsnWHDY', 'IuXDvsnWHDY','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6b2630fa-d220-4261-9aab-9ebd8c0c6a6b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FLuS1EWSl73', 'FLuS1EWSl73');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6b2630fa-d220-4261-9aab-9ebd8c0c6a6b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FLuS1EWSl73', 'FLuS1EWSl73','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('15c040a7-f6de-4b84-a43b-9edd41cc0bf9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'H9jtRi41UB3', 'H9jtRi41UB3');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('15c040a7-f6de-4b84-a43b-9edd41cc0bf9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'H9jtRi41UB3', 'H9jtRi41UB3','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('42b4a02e-d581-4c17-9f40-9f0bec1fe256', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3eO9A1YVhiI', '3eO9A1YVhiI');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('42b4a02e-d581-4c17-9f40-9f0bec1fe256', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3eO9A1YVhiI', '3eO9A1YVhiI','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b17cb5a0-d948-4116-ab0f-a0b85f4b222e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HcdytcrEagX', 'HcdytcrEagX');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b17cb5a0-d948-4116-ab0f-a0b85f4b222e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HcdytcrEagX', 'HcdytcrEagX','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('6e9de4c8-4eba-497c-856a-a20d54d262ee', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1KqYE7JcdRq', '1KqYE7JcdRq');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('6e9de4c8-4eba-497c-856a-a20d54d262ee', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1KqYE7JcdRq', '1KqYE7JcdRq','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('33abd4a1-4e12-41d4-83bb-a6aea91402a0', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'EWg8gnLGWhb', 'EWg8gnLGWhb');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('33abd4a1-4e12-41d4-83bb-a6aea91402a0', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'EWg8gnLGWhb', 'EWg8gnLGWhb','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('51888c52-4951-4f19-9d40-a6c0b8fd37bb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6iKarckgRTH', '6iKarckgRTH');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('51888c52-4951-4f19-9d40-a6c0b8fd37bb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6iKarckgRTH', '6iKarckgRTH','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('70a9f24c-8136-4b0e-bdc5-a6d141ae08d4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Ignacy from Teamdare', 'teamdareapp@gmail.com', 'teamdareapp@gmail.com');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('70a9f24c-8136-4b0e-bdc5-a6d141ae08d4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Ignacy from Teamdare', 'teamdareapp@gmail.com', 'teamdareapp@gmail.com','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('abebc36d-699b-4351-bef1-a707ad02da15', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Kamlesh Sahu', '437843666339345', '437843666339345');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('abebc36d-699b-4351-bef1-a707ad02da15', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Kamlesh Sahu', '437843666339345', '437843666339345','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e0f23b2c-d0f2-45f8-9eac-a8fcca92ab06', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'AX7ZS9WSOE', 'AX7ZS9WSOE');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e0f23b2c-d0f2-45f8-9eac-a8fcca92ab06', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'AX7ZS9WSOE', 'AX7ZS9WSOE','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4289004f-fb7d-4a43-a6f6-a923d6fc8c4c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Ignacy Wilczyński', '1272774066129142', '1272774066129142');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4289004f-fb7d-4a43-a6f6-a923d6fc8c4c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Ignacy Wilczyński', '1272774066129142', '1272774066129142','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7250f258-b6e0-4396-ad81-aaeec327e1f7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KYK4viF0gK7', 'KYK4viF0gK7');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7250f258-b6e0-4396-ad81-aaeec327e1f7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KYK4viF0gK7', 'KYK4viF0gK7','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9bbd039c-82f9-4b69-b2f6-ab5fd8c08d19', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5CpjGFZQ8vM', '5CpjGFZQ8vM');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9bbd039c-82f9-4b69-b2f6-ab5fd8c08d19', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5CpjGFZQ8vM', '5CpjGFZQ8vM','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7e1a596a-8768-46c0-bdef-ad96f8fb88ba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1wUMitb6KUf', '1wUMitb6KUf');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7e1a596a-8768-46c0-bdef-ad96f8fb88ba', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1wUMitb6KUf', '1wUMitb6KUf','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7e21d660-13ce-4b97-9de3-adab87733969', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User3', '2c1c7fa5', '2c1c7fa5');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7e21d660-13ce-4b97-9de3-adab87733969', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User3', '2c1c7fa5', '2c1c7fa5','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('58e15fdd-1a0f-4a4e-af4b-adb261e51890', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JTj1Djb9vXD', 'JTj1Djb9vXD');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('58e15fdd-1a0f-4a4e-af4b-adb261e51890', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JTj1Djb9vXD', 'JTj1Djb9vXD','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ded86f8a-e52e-4360-9c5d-aeefedf29280', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FbSG8Bi0Zqx', 'FbSG8Bi0Zqx');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ded86f8a-e52e-4360-9c5d-aeefedf29280', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FbSG8Bi0Zqx', 'FbSG8Bi0Zqx','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('863fbd39-3552-4efa-9a22-b2a62ced89e2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FqqyWYNYlXZ', 'FqqyWYNYlXZ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('863fbd39-3552-4efa-9a22-b2a62ced89e2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'FqqyWYNYlXZ', 'FqqyWYNYlXZ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9fa6b8e1-4153-496e-ba4a-b3877ed1e200', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Pierre Wautier', '1274947962527530', '1274947962527530');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9fa6b8e1-4153-496e-ba4a-b3877ed1e200', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Pierre Wautier', '1274947962527530', '1274947962527530','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b77af52a-4139-4d37-9c71-b404315463c2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Piotr Porzuczek', '1545573918791302', '1545573918791302');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b77af52a-4139-4d37-9c71-b404315463c2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Piotr Porzuczek', '1545573918791302', '1545573918791302','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('0f777abc-ded3-4ec0-a51a-b444b9511e77', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5IMD0eDyvj1', '5IMD0eDyvj1');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('0f777abc-ded3-4ec0-a51a-b444b9511e77', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5IMD0eDyvj1', '5IMD0eDyvj1','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('58f1820f-d822-4afa-bcaa-b7f1e71fe036', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'NdLVXM5p35', 'NdLVXM5p35');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('58f1820f-d822-4afa-bcaa-b7f1e71fe036', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'NdLVXM5p35', 'NdLVXM5p35','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d89ddab4-4002-42e6-9c3b-b8b7e3a644f1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '29:113FwH72Xx-SJpQ3oNjWhC11Wn9GnMJfP48IuYcpi1UA', '29:113FwH72Xx-SJpQ3oNjWhC11Wn9GnMJfP48IuYcpi1UA');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d89ddab4-4002-42e6-9c3b-b8b7e3a644f1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '29:113FwH72Xx-SJpQ3oNjWhC11Wn9GnMJfP48IuYcpi1UA', '29:113FwH72Xx-SJpQ3oNjWhC11Wn9GnMJfP48IuYcpi1UA','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f8e7cf78-9e23-4bac-888b-ba2643f1fec3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'BAX0nQYuKHD', 'BAX0nQYuKHD');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f8e7cf78-9e23-4bac-888b-ba2643f1fec3', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'BAX0nQYuKHD', 'BAX0nQYuKHD','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('3d357ca1-6d64-4cf7-b8cd-bad99b44a221', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'H9cT0RLHpJ', 'H9cT0RLHpJ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('3d357ca1-6d64-4cf7-b8cd-bad99b44a221', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'H9cT0RLHpJ', 'H9cT0RLHpJ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ae0cb01e-27fb-43f2-92c6-bb0192d68e05', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2y8huxDP5cK', '2y8huxDP5cK');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ae0cb01e-27fb-43f2-92c6-bb0192d68e05', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2y8huxDP5cK', '2y8huxDP5cK','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c9600445-f639-44b1-89cb-bb5790a93652', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'F3714Xk4e6z', 'F3714Xk4e6z');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c9600445-f639-44b1-89cb-bb5790a93652', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'F3714Xk4e6z', 'F3714Xk4e6z','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1551c292-6a52-4c35-9c4c-bde6d5337e47', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7LplSvKemH', '7LplSvKemH');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1551c292-6a52-4c35-9c4c-bde6d5337e47', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7LplSvKemH', '7LplSvKemH','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('61148863-21e3-402e-b797-beff8ab64cdc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Benjamin Lim', '1342747855745541', '1342747855745541');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('61148863-21e3-402e-b797-beff8ab64cdc', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Benjamin Lim', '1342747855745541', '1342747855745541','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('3ddd3012-2b6a-4e61-a039-bf65973763da', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Natalia Sarnacka', '1377354885617347', '1377354885617347');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('3ddd3012-2b6a-4e61-a039-bf65973763da', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Natalia Sarnacka', '1377354885617347', '1377354885617347','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5bd790ea-cecc-4347-bbaf-c33d023902f6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HSdla0DhhlO', 'HSdla0DhhlO');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5bd790ea-cecc-4347-bbaf-c33d023902f6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HSdla0DhhlO', 'HSdla0DhhlO','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ed86b520-a323-4fd3-a6c4-c396c354f7af', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Jonas Van Haeke', '1128491403933501', '1128491403933501');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ed86b520-a323-4fd3-a6c4-c396c354f7af', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Jonas Van Haeke', '1128491403933501', '1128491403933501','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('8b5159c1-4cc4-4511-8154-c695b7c655f7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'I2YWEpfbufb', 'I2YWEpfbufb');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('8b5159c1-4cc4-4511-8154-c695b7c655f7', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'I2YWEpfbufb', 'I2YWEpfbufb','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('0899a458-0225-44fc-aa4b-c72bca4acd41', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JHPF2s3bS', 'JHPF2s3bS');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('0899a458-0225-44fc-aa4b-c72bca4acd41', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JHPF2s3bS', 'JHPF2s3bS','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('09ee52be-c75a-4047-ba82-c999b4e430cf', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5uM4MY8PT8W', '5uM4MY8PT8W');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('09ee52be-c75a-4047-ba82-c999b4e430cf', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '5uM4MY8PT8W', '5uM4MY8PT8W','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4fededd7-4fd2-4de8-8efa-c9faa0a96063', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JtcKeqDWhqd', 'JtcKeqDWhqd');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4fededd7-4fd2-4de8-8efa-c9faa0a96063', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JtcKeqDWhqd', 'JtcKeqDWhqd','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1e32f910-cbc3-45b3-966c-ca578f23247e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '37gSiMYNTY1', '37gSiMYNTY1');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1e32f910-cbc3-45b3-966c-ca578f23247e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '37gSiMYNTY1', '37gSiMYNTY1','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1ac3d97a-a58a-423a-8ce1-cfde1d32cc3d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JMF1hTrMk0U', 'JMF1hTrMk0U');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1ac3d97a-a58a-423a-8ce1-cfde1d32cc3d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JMF1hTrMk0U', 'JMF1hTrMk0U','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('5ffc0163-8cc8-4302-878e-d0c3ebe5970f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Pamina Georg', '1454426627908531', '1454426627908531');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('5ffc0163-8cc8-4302-878e-d0c3ebe5970f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Pamina Georg', '1454426627908531', '1454426627908531','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7076928a-b674-4229-9908-d0ffe6907346', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3yr7kkrfHcD', '3yr7kkrfHcD');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7076928a-b674-4229-9908-d0ffe6907346', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '3yr7kkrfHcD', '3yr7kkrfHcD','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9414db35-3210-461b-9ab5-d49be3da9387', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'chotkos', 'U3436EEFJ:T3431JW9E', 'U3436EEFJ:T3431JW9E');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9414db35-3210-461b-9ab5-d49be3da9387', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'chotkos', 'U3436EEFJ:T3431JW9E', 'U3436EEFJ:T3431JW9E','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('8f4b2422-3f9e-432b-90e4-d5b3adef7457', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'AvXT4EJTl9c', 'AvXT4EJTl9c');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('8f4b2422-3f9e-432b-90e4-d5b3adef7457', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'AvXT4EJTl9c', 'AvXT4EJTl9c','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('2799986b-79b5-421e-8e08-d6cf967f30b6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JlscaFdkT0i', 'JlscaFdkT0i');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('2799986b-79b5-421e-8e08-d6cf967f30b6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JlscaFdkT0i', 'JlscaFdkT0i','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c6efb82a-484e-472b-8088-d8db4226261f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User1', '2c1c7fa3', '2c1c7fa3');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c6efb82a-484e-472b-8088-d8db4226261f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User1', '2c1c7fa3', '2c1c7fa3','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ab8fd251-9804-48c5-b77c-da1aad99df87', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'DOBT34Xt3da', 'DOBT34Xt3da');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ab8fd251-9804-48c5-b77c-da1aad99df87', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'DOBT34Xt3da', 'DOBT34Xt3da','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b42e5268-84ec-42b5-be23-da908dff8fbd', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JmSUDWlYkUh', 'JmSUDWlYkUh');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b42e5268-84ec-42b5-be23-da908dff8fbd', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'JmSUDWlYkUh', 'JmSUDWlYkUh','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('58e3ae91-ff88-4fc1-bc4f-dae4e510417b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Bf9lgf0EID0', 'Bf9lgf0EID0');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('58e3ae91-ff88-4fc1-bc4f-dae4e510417b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Bf9lgf0EID0', 'Bf9lgf0EID0','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7a7a951d-6b5f-4512-9b2e-dbdac022f408', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GYILDQCj6m6', 'GYILDQCj6m6');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7a7a951d-6b5f-4512-9b2e-dbdac022f408', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GYILDQCj6m6', 'GYILDQCj6m6','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('dfdd1eb7-17da-40f5-be0e-dbe4a3aa6ee6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1Lddtw8V6', '1Lddtw8V6');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('dfdd1eb7-17da-40f5-be0e-dbe4a3aa6ee6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '1Lddtw8V6', '1Lddtw8V6','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7159a47b-0fda-4d86-b629-dc4b4a676b5f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Enrico Antonacci', '1201423296593254', '1201423296593254');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7159a47b-0fda-4d86-b629-dc4b4a676b5f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Enrico Antonacci', '1201423296593254', '1201423296593254','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('1cb5c56c-db98-4c12-a904-de468edfaf7f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Dulles Deals', '1566834073330447', '1566834073330447');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('1cb5c56c-db98-4c12-a904-de468edfaf7f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Dulles Deals', '1566834073330447', '1566834073330447','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('833beb4f-a21d-4c11-8d3e-e1181b386f8a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KaJmPf3mwhW', 'KaJmPf3mwhW');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('833beb4f-a21d-4c11-8d3e-e1181b386f8a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KaJmPf3mwhW', 'KaJmPf3mwhW','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4f327b1b-143d-4286-8980-e1e5170fb0d0', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'rrrr', '5f1919de', '5f1919de');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4f327b1b-143d-4286-8980-e1e5170fb0d0', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'rrrr', '5f1919de', '5f1919de','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d7b89161-f38c-4204-b19a-e367de211778', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Elinor Brucker', '1594484337232040', '1594484337232040');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d7b89161-f38c-4204-b19a-e367de211778', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Elinor Brucker', '1594484337232040', '1594484337232040','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4673b986-d388-4000-876c-e4e589d8d7bb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '8eJJqvqmgl7', '8eJJqvqmgl7');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4673b986-d388-4000-876c-e4e589d8d7bb', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '8eJJqvqmgl7', '8eJJqvqmgl7','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('7dd7b18c-75d8-4641-8a58-e835d4491dc8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Piotr Uroda', '1185930248170658', '1185930248170658');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('7dd7b18c-75d8-4641-8a58-e835d4491dc8', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Piotr Uroda', '1185930248170658', '1185930248170658','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d7c14155-7116-4c37-8d46-e8993cb5423e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User3e', '2bbf7fa5', '2bbf7fa5');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d7c14155-7116-4c37-8d46-e8993cb5423e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'User3e', '2bbf7fa5', '2bbf7fa5','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c809e2bd-b6fa-41ee-8870-e8fed9cff69a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'ILRKoC26Zp5', 'ILRKoC26Zp5');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c809e2bd-b6fa-41ee-8870-e8fed9cff69a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'ILRKoC26Zp5', 'ILRKoC26Zp5','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('bf7b5bc3-fc02-4a6c-b119-e91893a95e5d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KtwGWodK6iF', 'KtwGWodK6iF');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('bf7b5bc3-fc02-4a6c-b119-e91893a95e5d', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'KtwGWodK6iF', 'KtwGWodK6iF','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b1f09ca3-c00f-447c-afa6-e94a3df258d4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9TjmogF49pZ', '9TjmogF49pZ');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b1f09ca3-c00f-447c-afa6-e94a3df258d4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '9TjmogF49pZ', '9TjmogF49pZ','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('a16e60bc-0790-4b43-a2e7-e98b116142b2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', 'FUgjMqX3XEL', 'FUgjMqX3XEL');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('a16e60bc-0790-4b43-a2e7-e98b116142b2', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'You', 'FUgjMqX3XEL', 'FUgjMqX3XEL','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('dc71dd81-ae0b-419a-9507-eab2ef962185', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'darekpham', 'U34S27US0:T3431JW9E', 'U34S27US0:T3431JW9E');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('dc71dd81-ae0b-419a-9507-eab2ef962185', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'darekpham', 'U34S27US0:T3431JW9E', 'U34S27US0:T3431JW9E','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('93416a3f-a5d0-4644-b590-eb071d138107', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '4dKLX5ApzU6', '4dKLX5ApzU6');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('93416a3f-a5d0-4644-b590-eb071d138107', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '4dKLX5ApzU6', '4dKLX5ApzU6','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('f39bc248-2b22-4a92-b719-eb128f095de9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'hbro1eRKC3', 'hbro1eRKC3');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('f39bc248-2b22-4a92-b719-eb128f095de9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'hbro1eRKC3', 'hbro1eRKC3','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ab8cbec0-8ee1-46d2-ac09-eb2e553737a4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ab8cbec0-8ee1-46d2-ac09-eb2e553737a4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'sss', 'f5998e78', 'f5998e78','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('e9c667cd-49d4-4cc4-9c51-ec798b6a9b08', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GhDHihs1fSc', 'GhDHihs1fSc');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('e9c667cd-49d4-4cc4-9c51-ec798b6a9b08', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'GhDHihs1fSc', 'GhDHihs1fSc','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('cc87aa81-51dc-41c3-88d3-ed719ea66438', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'D4nE8eg12y7', 'D4nE8eg12y7');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('cc87aa81-51dc-41c3-88d3-ed719ea66438', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'D4nE8eg12y7', 'D4nE8eg12y7','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('b262017b-2556-4bba-b322-ed7d4231f70e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2CP3N5wv3ba', '2CP3N5wv3ba');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('b262017b-2556-4bba-b322-ed7d4231f70e', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2CP3N5wv3ba', '2CP3N5wv3ba','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('4d522419-1e86-4502-89a7-eedf41c9493c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7tAJgzh2NqF', '7tAJgzh2NqF');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('4d522419-1e86-4502-89a7-eedf41c9493c', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '7tAJgzh2NqF', '7tAJgzh2NqF','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('cb4cc6e4-fdc5-4111-9aa7-eeebb3996f0a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2BbBnXZeKFm', '2BbBnXZeKFm');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('cb4cc6e4-fdc5-4111-9aa7-eeebb3996f0a', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2BbBnXZeKFm', '2BbBnXZeKFm','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('40ca8323-ba68-4860-9ce0-ef1887de201f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2mos0rmHKMY', '2mos0rmHKMY');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('40ca8323-ba68-4860-9ce0-ef1887de201f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2mos0rmHKMY', '2mos0rmHKMY','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9d9c7aa2-4cee-406c-aef1-f2d790ca2407', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6v6kfG2Bml4', '6v6kfG2Bml4');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9d9c7aa2-4cee-406c-aef1-f2d790ca2407', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '6v6kfG2Bml4', '6v6kfG2Bml4','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d811ce48-1001-4f58-9d6e-f3dda85b22c1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LOOGD6F8h96', 'LOOGD6F8h96');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d811ce48-1001-4f58-9d6e-f3dda85b22c1', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'LOOGD6F8h96', 'LOOGD6F8h96','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('980d9292-9b4f-40c3-83ce-f59886a822d6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2veNvAjIOfE', '2veNvAjIOfE');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('980d9292-9b4f-40c3-83ce-f59886a822d6', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2veNvAjIOfE', '2veNvAjIOfE','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('9328b08e-313e-4b0b-9056-f5a81a9db86b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Wk Yeo', '1103075473138536', '1103075473138536');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('9328b08e-313e-4b0b-9056-f5a81a9db86b', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Wk Yeo', '1103075473138536', '1103075473138536','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('01e612ed-165b-4418-bf3d-f77541fb1f14', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HahfviVLmRp', 'HahfviVLmRp');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('01e612ed-165b-4418-bf3d-f77541fb1f14', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HahfviVLmRp', 'HahfviVLmRp','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('de37b2b3-728e-4aa9-8741-f82bd104a1f4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'CGcUkRQKJVX', 'CGcUkRQKJVX');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('de37b2b3-728e-4aa9-8741-f82bd104a1f4', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'CGcUkRQKJVX', 'CGcUkRQKJVX','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('d175db46-9ebb-40f8-839b-f931fd15a639', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'James Putnamstei', '1117293955051203', '1117293955051203');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('d175db46-9ebb-40f8-839b-f931fd15a639', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'James Putnamstei', '1117293955051203', '1117293955051203','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('79a001dd-e482-4c39-a053-faa7efc56eae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Mateusz Chodkowski', '1183336868412057', '1183336868412057');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('79a001dd-e482-4c39-a053-faa7efc56eae', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'Mateusz Chodkowski', '1183336868412057', '1183336868412057','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('ec55a2cf-fbda-4d73-b0e9-fb2f4f932594', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2rzYB1wAkTr', '2rzYB1wAkTr');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('ec55a2cf-fbda-4d73-b0e9-fb2f4f932594', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, '2rzYB1wAkTr', '2rzYB1wAkTr','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('c5f3daee-e588-4346-a1ca-fb40c4751dfa', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IrwCFqWbMXB', 'IrwCFqWbMXB');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('c5f3daee-e588-4346-a1ca-fb40c4751dfa', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'IrwCFqWbMXB', 'IrwCFqWbMXB','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('218c0516-d1fd-4702-b05c-fba51c9e929f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'tester', 'tester', '000000');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('218c0516-d1fd-4702-b05c-fba51c9e929f', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, 'tester', 'tester', '000000','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('8fd00e5c-2d47-495e-b8ae-fc23a313bdac', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Es08VHirw2T', 'Es08VHirw2T');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('8fd00e5c-2d47-495e-b8ae-fc23a313bdac', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'Es08VHirw2T', 'Es08VHirw2T','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('25d2252e-83c5-4475-aa0e-fc84ef1bbef9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HOn8E4wDlEi', 'HOn8E4wDlEi');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('25d2252e-83c5-4475-aa0e-fc84ef1bbef9', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'HOn8E4wDlEi', 'HOn8E4wDlEi','','');
 
-INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", "AppNick", "UserId") VALUES ('66d0ba29-7220-4029-89ab-fd6c2abd3992', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'A3DPHKaesuP', 'A3DPHKaesuP');
+INSERT INTO public."Players" ("Id", "GameMasterId", "Level", "Nick", , "AppNick", "UserId", "ServiceUrl", "ConversationId") VALUES ('66d0ba29-7220-4029-89ab-fd6c2abd3992', 'e9c2a2da-2154-4309-98d6-5033d82307fa', 0, NULL, 'A3DPHKaesuP', 'A3DPHKaesuP','','');
 
 ALTER TABLE public."Players" DROP COLUMN "AppNick";
 

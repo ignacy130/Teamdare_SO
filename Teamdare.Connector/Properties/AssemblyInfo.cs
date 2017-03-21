@@ -1,17 +1,15 @@
-﻿
+﻿using System.Reflection;
+using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-using System.Reflection;
-using System.Runtime.InteropServices;
-
-[assembly: AssemblyTitle("Teamdare.Core")]
+[assembly: AssemblyTitle("Teamdare.Connector")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Teamdare.Core")]
+[assembly: AssemblyProduct("Teamdare.Connector")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -24,4 +22,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("DEF4B06F-DF34-44F0-94B6-D892240EA1C7")]
+[assembly: Guid("AA7D4E94-98EA-419A-AAC4-A473F586B41C")]

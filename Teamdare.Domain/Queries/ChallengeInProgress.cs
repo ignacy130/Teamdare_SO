@@ -21,7 +21,6 @@ namespace Teamdare.Domain.Queries
         {
             query.QueryResult = DbContext.Challenges.Include(c => c.Adventure).SingleOrDefault(
                 c => c.Player.UserId == query.UserId && c.Status == ChallengeStatus.InProgress);
-
             return query;
         }
     }
