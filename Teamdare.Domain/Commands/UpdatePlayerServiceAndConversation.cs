@@ -23,7 +23,10 @@ namespace Teamdare.Domain.Commands
         {
             var player = DbContext.Players.SingleOrDefault(p => p.UserId == command.UserId);
 
-            if (string.IsNullOrWhiteSpace(player?.ServiceUrl) || string.IsNullOrWhiteSpace(player?.ConversationId))
+            if (player == null)
+                return;
+
+            if (string.IsNullOrWhiteSpace(command.ServiceUrl) || string.IsNullOrWhiteSpace(command.ConversationId))
                 return;
 
             player.ServiceUrl = command.ServiceUrl;
