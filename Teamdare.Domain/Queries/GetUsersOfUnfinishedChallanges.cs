@@ -17,11 +17,10 @@ namespace Teamdare.Domain.Queries
     {
         public override GetUsersOfUnfinishedChallanges Perform(GetUsersOfUnfinishedChallanges query)
         {
+            var yesterday = DateTimeGetter.GetDateTime().AddDays(-1);
+
             query.QueryResult = DbContext.Challenges
-                .Where(x =>
-                    x.Status == ChallengeStatus.InProgress &&
-                    (DateTime.Now - x.StartDate) != null &&
-                    (DateTime.Now - x.StartDate).GetValueOrDefault().Hours <= 24)
+                .Where(x => x.Status == ChallengeStatus.InProgress && yesterday <= x.StartDate)
                 .Select(x => x.Player)
                 .ToList();
 
