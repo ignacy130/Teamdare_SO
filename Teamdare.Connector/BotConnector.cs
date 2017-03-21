@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using Teamdare.Connector.Authentication;
 
 namespace Teamdare.Connector
@@ -13,20 +14,24 @@ namespace Teamdare.Connector
     {
         private readonly IMemoryCache _memoryCache;
         private readonly BotCredentials _botCredentials;
+        private readonly ILogger<BotConnector> _logger;
 
         //WHY STATIC? https://aspnetmonsters.com/2016/08/2016-08-27-httpclientwrong/
         private static readonly HttpClient HttpClient = new HttpClient();
 
-        public BotConnector(BotCredentials botCredentials, IMemoryCache memoryCache)
+        public BotConnector(BotCredentials botCredentials, IMemoryCache memoryCache, ILogger<BotConnector> logger)
         {
             _botCredentials = botCredentials;
             _memoryCache = memoryCache;
+            _logger = logger;
         }
 
         public async Task SendToConversationAsync(string serviceUrl, Activity response)
         {
             var replyUrl = this.GetReplyUrl(serviceUrl, response.Conversation.Id);
             var token = await this.GetBotApiToken();
+
+            _logger.LogDebug($"SendToConversationAsync => {replyUrl}");
 
             HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             await HttpClient.PostAsJsonAsync<Activity>(replyUrl, response);
@@ -42,6 +47,8 @@ namespace Teamdare.Connector
             {
                 var replyUrl = this.GetReplyUrl(activity);
                 var token = await this.GetBotApiToken();
+
+                _logger.LogDebug($"ReplyToActivityAsync => {replyUrl}");
 
                 HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 await HttpClient.PostAsJsonAsync<Activity>(replyUrl, response);
@@ -87,7 +94,7 @@ namespace Teamdare.Connector
         private string GetReplyUrl(string serviceUrl, string conversationId)
         {
             var url = new Uri(new Uri(serviceUrl + (serviceUrl.EndsWith("/") ? "" : "/")),
-                "vv3/conversations/{conversationId}/activities").ToString();
+                "v3/conversations/{conversationId}/activities").ToString();
             url = url.Replace("{conversationId}", Uri.EscapeDataString(conversationId));
             return url;
         }
