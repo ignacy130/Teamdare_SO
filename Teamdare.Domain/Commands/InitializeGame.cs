@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Teamdare.Core.Commands;
 using Teamdare.Database.Entities;
@@ -31,52 +30,50 @@ namespace Teamdare.Domain.Commands
             var player = Please.Do(new GetOrCreatePlayer(command.Username, command.UserId, command.ConversationId,
                 command.ServiceUrl, gameMaster.Id )).Result;
 
-            var adventures = new List<Tuple<string, string, string>>()
+            var adventures = new List<InitializeGameAdventure>()
             {
-                new Tuple<string, string, string>(ResourcesStrings.PeopleAdventureTitle,
+                new InitializeGameAdventure(ResourcesStrings.PeopleAdventureTitle,
                     ResourcesStrings.PeopleAdventureFinished, ResourcesImages.PeopleBadge),
-                new Tuple<string, string, string>(ResourcesStrings.FoodAdventureTitle,
+                new InitializeGameAdventure(ResourcesStrings.FoodAdventureTitle,
                     ResourcesStrings.FoodAdventureFinished, ResourcesImages.FoodBadge),
-                new Tuple<string, string, string>(ResourcesStrings.PlacesAdventureTitle,
+                new InitializeGameAdventure(ResourcesStrings.PlacesAdventureTitle,
                     ResourcesStrings.PlacesAdventureFinished, ResourcesImages.PlacesBadge)
             };
 
-            var challanges = new List<List<Tuple<string,string>>>()
+            var challanges = new List<List<InitializeGameChallenge>>()
             {
-                new List<Tuple<string,string>>()
+                new List<InitializeGameChallenge>()
                 {
-					new Tuple<string, string>(ResourcesStrings.IntroduceYourselfChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.IntroduceYourselfChallengeTitle , ResourcesStrings
                         .IntroduceYourselfChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.LunchChallengeTitle, ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.LunchChallengeTitle, ResourcesStrings
                         .LunchChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.SelfieChallengeTitle, ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.SelfieChallengeTitle, ResourcesStrings
                         .SelfieChallengeDescription)
                 },
-				new List<Tuple<string,string>>()
+				new List<InitializeGameChallenge>()
 				{
-					new Tuple<string, string>(ResourcesStrings.CoffieWithChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.CoffieWithChallengeTitle , ResourcesStrings
                         .CoffieWithChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.ShopChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.ShopChallengeTitle , ResourcesStrings
                         .ShopChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.BeerChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.BeerChallengeTitle , ResourcesStrings
                         .BeerChallengeDescription)
                 },
-				new List<Tuple<string,string>>()
+				new List<InitializeGameChallenge>()
 				{
-					new Tuple<string, string>(ResourcesStrings.ToiletChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.ToiletChallengeTitle , ResourcesStrings
                         .ToiletChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.RelaxRoomChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.RelaxRoomChallengeTitle , ResourcesStrings
                         .RelaxRoomChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.KitchenChallengeTitle , ResourcesStrings
+					new InitializeGameChallenge(ResourcesStrings.KitchenChallengeTitle , ResourcesStrings
                         .KitchenChallengeDescription)
                 }
             };
 
             for (var i = 0; i < adventures.Count; i++)
             {
-                var adventureStrings = adventures[i];
-                var adventure = CreateAdventure(player, adventureStrings.Item1, adventureStrings.Item2,
-                    adventureStrings.Item3, i);
+                var adventure = CreateAdventure(player, adventures[i], i);
 
                 CreateChallenges(player, adventure, challanges[i]);
             }
@@ -84,14 +81,14 @@ namespace Teamdare.Domain.Commands
             DbContext.SaveChanges();
         }
 
-        private Adventure CreateAdventure(Player player, string title, string finishedMessage, string finishedImageUrl, int order)
+        private Adventure CreateAdventure(Player player, InitializeGameAdventure adventureInfo, int order)
         {
              var adventure = new Adventure()
              {
                  Player = player,
-                 Title = title,
-                 FinishedText = finishedMessage,
-                 FinishedImageUrl = finishedImageUrl,
+                 Title = adventureInfo.Title,
+                 FinishedText = adventureInfo.FinishedMessage,
+                 FinishedImageUrl = adventureInfo.FinishedImageUrl,
                  Order = order
              };
 
@@ -100,14 +97,14 @@ namespace Teamdare.Domain.Commands
             return adventure;
         }
 
-        private void CreateChallenges(Player player, Adventure adventure, IList<Tuple<string,string>> titles)
+        private void CreateChallenges(Player player, Adventure adventure, IList<InitializeGameChallenge> challenges)
         {
-            for (var i = 0; i < titles.Count(); i++)
+            for (var i = 0; i < challenges.Count(); i++)
             {
                 var challange = new Challenge()
                 {
-                    Title = titles[i].Item1,
-					Description = titles[i].Item2,
+                    Title = challenges[i].Title,
+					Description = challenges[i].Description,
                     Order = i,
                     Adventure = adventure,
                     Player = player
@@ -115,6 +112,32 @@ namespace Teamdare.Domain.Commands
 
                 DbContext.Challenges.Add(challange);
             }
+        }
+
+        private class InitializeGameAdventure
+        {
+            public InitializeGameAdventure(string title, string finishedMessage, string finishedImageUrl)
+            {
+                Title = title;
+                FinishedMessage = finishedMessage;
+                FinishedImageUrl = finishedImageUrl;
+            }
+
+            public string Title { get; }
+            public string FinishedMessage { get; }
+            public string FinishedImageUrl { get; }
+        }
+
+        private class InitializeGameChallenge
+        {
+            public InitializeGameChallenge(string title, string description)
+            {
+                Title = title;
+                Description = description;
+            }
+
+            public string Title { get; }
+            public string Description { get; }
         }
     }
 }
