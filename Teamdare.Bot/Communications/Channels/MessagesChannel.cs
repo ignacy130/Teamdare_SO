@@ -17,27 +17,16 @@ namespace Teamdare.Bot.Communications.Channels
             _botConnector = botConnector;
         }
 
-        public async Task Handle(Activity activity)
-        {
-            //var connector = this._responses.GetConnector(activity);
-
-            foreach (var response in _decisionTreeHead.Evaluate(activity))
-            {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
-				var results = _decisionTreeHead.Evaluate(activity).ToList();
-
-				foreach (var response in results)
-                {
-                    var typing = activity.CreateReply();
-                    typing.Type = ActivityTypes.Typing;
-                    typing.Text = null;
-                    await client.PostAsJsonAsync<Activity>(url, typing);
-                    await client.PostAsJsonAsync<Activity>(url, response);
-                }
-            }
-        }
-
-
+		public async Task Handle(Activity activity)
+		{
+			foreach (var response in _decisionTreeHead.Evaluate(activity))
+			{
+				await _botConnector.ReplyToActivityAsync(activity, response);
+				var typing = activity.CreateReply();
+				typing.Type = ActivityTypes.Typing;
+				typing.Text = null;
+				await _botConnector.ReplyToActivityAsync(activity, typing);
+			}
+		}
     }
 }
