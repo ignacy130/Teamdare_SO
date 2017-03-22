@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Net.Http;
+using System.Runtime.ExceptionServices;
+using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 using Teamdare.Connector;
 using Teamdare.Core;
 using Teamdare.Database.Entities;
+using Teamdare.Domain.Commands;
 using Teamdare.Worker.Interfaces;
 using Teamdare.Domain.Queries;
 
@@ -22,14 +26,14 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
 
         public void Execute()
         {
-            var usersToRemind = Please.Give(new GetUsersOfUnfinishedChallanges()).QueryResult;
+            var playersToRemind = Please.Give(new GetPlayersOfUnfinishedChallanges()).QueryResult;
 
-            foreach (var user in usersToRemind)
+            foreach (var player in playersToRemind)
             {
-                if (!ShouldSendReminder(user))
+                if (!ShouldSendReminder(player))
                     continue;
 
-                SendReminder(user);
+                SendReminder(player);
             }
         }
 
@@ -41,16 +45,24 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
             return true;
         }
 
-        private async void SendReminder(Player user)
+        private void SendReminder(Player player)
         {
             var newMessage = Activity.CreateMessageActivity();
             newMessage.Type = ActivityTypes.Message;
             newMessage.From = new ChannelAccount("");
-            newMessage.Conversation = new ConversationAccount(false, user.ConversationId, null);
-            newMessage.Recipient = new ChannelAccount(user.UserId, user.Nick);
+            newMessage.Conversation = new ConversationAccount(false, player.ConversationId, null);
+            newMessage.Recipient = new ChannelAccount(player.UserId, player.Nick);
             newMessage.Text = "How is your challenge going?";
 
-            await _botConnector.SendToConversationAsync(user.ServiceUrl, (Activity)newMessage);
+            try
+            {
+                var response = _botConnector.SendToConversationAsync(player.ServiceUrl, (Activity) newMessage).Result;
+                response.EnsureSuccessStatusCode();
+            }
+            catch (Exception ex)
+            {
+                Please.Do(new ClearPlayerServiceAndConversation(player.UserId));
+            }
         }
     }
 }
