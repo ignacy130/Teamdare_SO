@@ -29,7 +29,7 @@ namespace Teamdare.Domain.Commands
         {
             var gameMaster = Please.Do(new GetOrCreateGameMaster()).Result;
             var player = Please.Do(new GetOrCreatePlayer(command.Username, command.UserId, command.ConversationId,
-                command.ServiceUrl, gameMaster.Id)).Result;
+                command.ServiceUrl, gameMaster.Id )).Result;
 
             var adventures = new List<Tuple<string, string, string>>()
             {

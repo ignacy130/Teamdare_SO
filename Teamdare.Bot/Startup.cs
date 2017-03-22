@@ -10,6 +10,11 @@ using Microsoft.Extensions.Logging;
 using Teamdare.Core;
 using Teamdare.Database;
 using Teamdare.Domain;
+using Hangfire;
+using Teamdare.Worker.WorkerFunctions.Hourly;
+using Hangfire.MemoryStorage;
+using Teamdare.Connector;
+using Teamdare.Worker;
 
 namespace Teamdare.Bot
 {
@@ -47,7 +52,11 @@ namespace Teamdare.Bot
 
 
             var connectionString = Configuration["DbContextSettings:ConnectionString"];
-            services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString));
+
+            services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString), ServiceLifetime.Transient);
+            services.AddHangfire(x => x.UseMemoryStorage());
+
+
 
             return ConfigureIoC(services);
         }
@@ -60,6 +69,8 @@ namespace Teamdare.Bot
             builder.RegisterModule<CoreModule>();
             builder.RegisterModule<DomainModule>();
             builder.RegisterModule<DatabaseModule>();
+            builder.RegisterModule<WorkerModule>();
+            builder.RegisterModule<ConnectorModule>();
 
             builder.Populate(services);
 
@@ -76,6 +87,14 @@ namespace Teamdare.Bot
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseHangfireDashboard();
+            app.UseHangfireServer();
+
+            var taskReminder = IoC.Resolve<TaskReminder>();
+
+            RecurringJob.AddOrUpdate(
+                () => taskReminder.Execute(), Cron.MinuteInterval(1));
+                
             app.UseMvc();
         }
     }

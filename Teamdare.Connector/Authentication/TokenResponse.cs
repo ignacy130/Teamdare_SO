@@ -1,4 +1,4 @@
-﻿namespace Teamdare.Bot.Authentication
+﻿namespace Teamdare.Connector.Authentication
 {
     public class TokenResponse
     {

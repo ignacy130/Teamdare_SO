@@ -2,13 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Teamdare.Database;
+using Teamdare.Database.Entities;
 
 namespace Teamdare.Database.Migrations
 {
     [DbContext(typeof(TeamdareContext))]
-    partial class TeamdareContextModelSnapshot : ModelSnapshot
+    [Migration("20170315180518_ServiceUrl and ConversationId added to Player")]
+    partial class ServiceUrlandConversationIdaddedtoPlayer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
@@ -48,8 +52,6 @@ namespace Teamdare.Database.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<Guid>("AdventureId");
-
-                    b.Property<string>("Description");
 
                     b.Property<int>("Order");
 

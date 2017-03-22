@@ -1,6 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Teamdare.Core.Queries;
+using Teamdare.Domain.Commands;
 
 namespace Teamdare.Domain.Queries
 {
@@ -22,6 +22,8 @@ namespace Teamdare.Domain.Queries
     {
         public override IsUserRegistered Perform(IsUserRegistered query)
         {
+            Please.Do(new UpdatePlayerServiceAndConversation(query.UserId, query.ServiceUrl, query.ConversationId));
+
             var player = DbContext.Players.SingleOrDefault(x => x.UserId == query.UserId);
 
             query.QueryResult = player != null;

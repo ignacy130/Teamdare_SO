@@ -20,5 +20,8 @@ namespace Teamdare.Database.Entities
 
         public List<Adventure> Adventures { get; set; }
         public List<Reward> Rewards { get; set; }
+
+        public string ServiceUrl { get; set; }
+        public string ConversationId { get; set; }
     }
 }
