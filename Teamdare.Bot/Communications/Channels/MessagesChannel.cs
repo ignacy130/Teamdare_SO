@@ -40,15 +40,12 @@ namespace Teamdare.Bot.Communications.Channels
 
 				foreach (var response in results)
                 {
-					if (response == results.First() || response != results.Last())
-					{
-						var typing = activity.CreateReply();
-						typing.Type = ActivityTypes.Typing;
-						typing.Text = null;
-						await client.PostAsJsonAsync<Activity>(url, typing);
-					}
-					await client.PostAsJsonAsync<Activity>(url, response);
-				}
+                    var typing = activity.CreateReply();
+                    typing.Type = ActivityTypes.Typing;
+                    typing.Text = null;
+                    await client.PostAsJsonAsync<Activity>(url, typing);
+                    await client.PostAsJsonAsync<Activity>(url, response);
+                }
             }
         }
 
