@@ -33,6 +33,10 @@ namespace Teamdare.Domain.DecisionTree.Actions
 
             yield return reply;
 
+            var userHasUnfinishedChallenge = Please.Give(new HasAnyChallengeUnfinished(activity.From.Id)).QueryResult;
+            if(!userHasUnfinishedChallenge)
+                yield return activity.CreateReply("Congratulations! That's all I prepared for you by now! But stay ready for new adventures!");
+
             var giveUserChallengerResponses = new GiveUserChallenge().Evaluate(activity);
 
             if (giveUserChallengerResponses == null)

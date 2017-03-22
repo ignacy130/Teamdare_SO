@@ -10,7 +10,7 @@ namespace Teamdare.Domain.DecisionTree.Queries
     {
         public CheckIfAnyChallangeIsUnfinished()
         {
-            Test = activity => Please.Check(new IsAnyUnfinishedChallenge(activity.From.Id));
+            Test = activity => Please.Check(new HasAnyChallengeUnfinished(activity.From.Id));
             Positive = new GiveUserChallenge();
             Negative = new FinishUserGame();
         }
