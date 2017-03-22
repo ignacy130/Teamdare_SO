@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
+using Teamdare.Connector;
 
 namespace Teamdare.Bot.Communications
 {
     public class Responses
     {
-        public Activity CreateReply(Activity activity)
+        private readonly BotConnector _botConnector;
+
+        public Responses(BotConnector botConnector)
         {
-            return activity.CreateReply();
+            _botConnector = botConnector;
         }
 
+        [Obsolete("Use BotConnector")]
         public ConnectorClient GetConnector(Activity activity)
         {
             return new ConnectorClient(new Uri(activity.ServiceUrl), new MicrosoftAppCredentials("a3ae5c94-83e6-4dc2-9c1b-3ba5408e6694", "uWsEjRcaqsJVVi2ObXGsefS"));
@@ -18,13 +22,11 @@ namespace Teamdare.Bot.Communications
 
         public async Task SendTypingIndicator(Activity activity)
         {
-            var connector = this.GetConnector(activity);
-            var typing = this.CreateReply(activity);
-
+            var typing = activity.CreateReply();
             typing.Type = ActivityTypes.Typing;
             typing.Text = null;
 
-            await connector.Conversations.ReplyToActivityAsync(typing);
+            await _botConnector.ReplyToActivityAsync(activity, typing);
         }
     }
 }

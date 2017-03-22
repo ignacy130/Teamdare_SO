@@ -2,7 +2,6 @@
 using Microsoft.Bot.Connector;
 using Teamdare.Connector;
 using Teamdare.Domain.DecisionTree;
-using System.Linq;
 
 namespace Teamdare.Bot.Communications.Channels
 {
@@ -10,22 +9,22 @@ namespace Teamdare.Bot.Communications.Channels
     {
         private readonly DecisionTreeHead _decisionTreeHead;
         private readonly BotConnector _botConnector;
+        private readonly Responses _responses;
 
-        public MessagesChannel(DecisionTreeHead decisionTreeHead, BotConnector botConnector)
+        public MessagesChannel(DecisionTreeHead decisionTreeHead, BotConnector botConnector, Responses responses)
         {
             _decisionTreeHead = decisionTreeHead;
             _botConnector = botConnector;
+            _responses = responses;
         }
 
 		public async Task Handle(Activity activity)
 		{
+		    await _responses.SendTypingIndicator(activity);
 			foreach (var response in _decisionTreeHead.Evaluate(activity))
 			{
+			    await _responses.SendTypingIndicator(activity);
 				await _botConnector.ReplyToActivityAsync(activity, response);
-				var typing = activity.CreateReply();
-				typing.Type = ActivityTypes.Typing;
-				typing.Text = null;
-				await _botConnector.ReplyToActivityAsync(activity, typing);
 			}
 		}
     }
