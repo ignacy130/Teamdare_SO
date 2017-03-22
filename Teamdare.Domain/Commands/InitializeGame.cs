@@ -33,42 +33,42 @@ namespace Teamdare.Domain.Commands
 
             var adventures = new List<Tuple<string, string, string>>()
             {
-                new Tuple<string, string, string>(ResourcesStrings.AdventurePlacesAdventureTitle,
-                    ResourcesStrings.AdventurePlacesAdventureFinished, ResourcesImages.PlacesBadge),
-                new Tuple<string, string, string>(ResourcesStrings.AdventureFoodAdventureTitle,
-                    ResourcesStrings.AdventureFoodAdventureFinished, ResourcesImages.FoodBadge),
-                new Tuple<string, string, string>(ResourcesStrings.AdventurePlacesAdventureTitle,
-                    ResourcesStrings.AdventurePlacesAdventureFinished, ResourcesImages.PlacesBadge)
+                new Tuple<string, string, string>(ResourcesStrings.PeopleAdventureTitle,
+                    ResourcesStrings.PeopleAdventureFinished, ResourcesImages.PeopleBadge),
+                new Tuple<string, string, string>(ResourcesStrings.FoodAdventureTitle,
+                    ResourcesStrings.FoodAdventureFinished, ResourcesImages.FoodBadge),
+                new Tuple<string, string, string>(ResourcesStrings.PlacesAdventureTitle,
+                    ResourcesStrings.PlacesAdventureFinished, ResourcesImages.PlacesBadge)
             };
 
             var challanges = new List<List<Tuple<string,string>>>()
             {
                 new List<Tuple<string,string>>()
                 {
-					new Tuple<string, string>(ResourcesStrings.AdventureIntroduceYourselfChallengeTitle , ResourcesStrings
-                        .AdventureIntroduceYourselfChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.AdventureLunchChallengeTitle, ResourcesStrings
-                        .AdventureLunchChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.AdventureSelfieChallengeTitle, ResourcesStrings
-                        .AdventureSelfieChallengeDescription)
+					new Tuple<string, string>(ResourcesStrings.IntroduceYourselfChallengeTitle , ResourcesStrings
+                        .IntroduceYourselfChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.LunchChallengeTitle, ResourcesStrings
+                        .LunchChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.SelfieChallengeTitle, ResourcesStrings
+                        .SelfieChallengeDescription)
                 },
 				new List<Tuple<string,string>>()
 				{
-					new Tuple<string, string>(ResourcesStrings.AdventureCoffieWithChallengeTitle , ResourcesStrings
-                        .AdventureCoffieWithChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.AdventureShopChallengeTitle , ResourcesStrings
-                        .AdventureShopChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.AdventureBeerChallengeTitle , ResourcesStrings
-                        .AdventureBeerChallengeDescription)
+					new Tuple<string, string>(ResourcesStrings.CoffieWithChallengeTitle , ResourcesStrings
+                        .CoffieWithChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.ShopChallengeTitle , ResourcesStrings
+                        .ShopChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.BeerChallengeTitle , ResourcesStrings
+                        .BeerChallengeDescription)
                 },
 				new List<Tuple<string,string>>()
 				{
-					new Tuple<string, string>(ResourcesStrings.AdventureToiletChallengeTitle , ResourcesStrings
-                        .AdventureToiletChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.AdventureRelaxRoomChallengeTitle , ResourcesStrings
-                        .AdventureRelaxRoomChallengeDescription),
-					new Tuple<string, string>(ResourcesStrings.AdventureKitchenChallengeTitle , ResourcesStrings
-                        .AdventureKitchenChallengeDescription)
+					new Tuple<string, string>(ResourcesStrings.ToiletChallengeTitle , ResourcesStrings
+                        .ToiletChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.RelaxRoomChallengeTitle , ResourcesStrings
+                        .RelaxRoomChallengeDescription),
+					new Tuple<string, string>(ResourcesStrings.KitchenChallengeTitle , ResourcesStrings
+                        .KitchenChallengeDescription)
                 }
             };
 
