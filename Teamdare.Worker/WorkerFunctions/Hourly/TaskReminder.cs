@@ -59,7 +59,7 @@ namespace Teamdare.Worker.WorkerFunctions.Hourly
                 var response = _botConnector.SendToConversationAsync(player.ServiceUrl, (Activity) newMessage).Result;
                 response.EnsureSuccessStatusCode();
             }
-            catch (Exception ex)
+            catch
             {
                 Please.Do(new ClearPlayerServiceAndConversation(player.UserId));
             }
