@@ -6,16 +6,16 @@ using Teamdare.Database.Entities;
 
 namespace Teamdare.Domain.Queries
 {
-    public class GetUsersOfUnfinishedChallanges : QueryData<List<Player>>
+    public class GetPlayersOfUnfinishedChallanges : QueryData<List<Player>>
     {
-        public GetUsersOfUnfinishedChallanges()
+        public GetPlayersOfUnfinishedChallanges()
         {
         }
     }
 
-    public class GetUsersOfUnfinishedChallangesQuery : QueryPerformer<GetUsersOfUnfinishedChallanges>
+    public class GetPlayersOfUnfinishedChallangesQuery : QueryPerformer<GetPlayersOfUnfinishedChallanges>
     {
-        public override GetUsersOfUnfinishedChallanges Perform(GetUsersOfUnfinishedChallanges query)
+        public override GetPlayersOfUnfinishedChallanges Perform(GetPlayersOfUnfinishedChallanges query)
         {
             var yesterday = DateTimeGetter.GetDateTime().AddDays(-1);
 

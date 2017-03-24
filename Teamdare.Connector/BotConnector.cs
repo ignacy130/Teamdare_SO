@@ -26,7 +26,7 @@ namespace Teamdare.Connector
             _logger = logger;
         }
 
-        public async Task SendToConversationAsync(string serviceUrl, Activity response)
+        public async Task<HttpResponseMessage> SendToConversationAsync(string serviceUrl, Activity response)
         {
             var replyUrl = this.GetReplyUrl(serviceUrl, response.Conversation.Id);
             var token = await this.GetBotApiToken();
@@ -34,14 +34,14 @@ namespace Teamdare.Connector
             _logger.LogDebug($"SendToConversationAsync => {replyUrl}");
 
             HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            await HttpClient.PostAsJsonAsync<Activity>(replyUrl, response);
+            return await HttpClient.PostAsJsonAsync<Activity>(replyUrl, response);
         }
 
-        public async Task ReplyToActivityAsync(Activity activity, Activity response)
+        public async Task<HttpResponseMessage> ReplyToActivityAsync(Activity activity, Activity response)
         {
             if (activity.ReplyToId == "0")
             {
-                await this.SendToConversationAsync(activity.ServiceUrl, response);
+                return await this.SendToConversationAsync(activity.ServiceUrl, response);
             }
             else
             {
@@ -51,7 +51,7 @@ namespace Teamdare.Connector
                 _logger.LogDebug($"ReplyToActivityAsync => {replyUrl}");
 
                 HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                await HttpClient.PostAsJsonAsync<Activity>(replyUrl, response);
+                return await HttpClient.PostAsJsonAsync<Activity>(replyUrl, response);
             }
         }
 
