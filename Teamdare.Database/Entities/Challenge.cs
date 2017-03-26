@@ -7,7 +7,8 @@ namespace Teamdare.Database.Entities
     {
         public DateTime? StartDate { get; set; }
         public string Title { get; set; }
-        public ChallengeStatus Status { get; set; }
+		public string Description { get; set; }
+		public ChallengeStatus Status { get; set; }
         public int Order { get; set; }
 
         public Guid AdventureId { get; set; }

@@ -55,9 +55,9 @@ namespace Teamdare.Bot
             var connectionString = Configuration["DbContextSettings:ConnectionString"];
 
             services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString), ServiceLifetime.Transient);
+            //For migration purposes, remove the ServiceLifetime.Transient parameter from registration
+            //services.AddDbContext<TeamdareContext>(opts => opts.UseNpgsql(connectionString));
             services.AddHangfire(x => x.UseMemoryStorage());
-
-
 
             return ConfigureIoC(services);
         }

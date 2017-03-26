@@ -11,7 +11,7 @@ namespace Teamdare.Domain.DecisionTree.Queries
         public CheckIfChallengeShouldBeFinished()
         {
             Test = activity => NLPProcessor.DoesMessageMeanThatUserFinishedPrevChallenge(activity.Text);
-            Positive = new CheckIfGameShouldBeFinished();
+            Positive = new CompleteUserChallenge();
             Negative = new AskUserAboutProgress();
         }
     }

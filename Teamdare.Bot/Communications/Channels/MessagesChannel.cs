@@ -9,24 +9,23 @@ namespace Teamdare.Bot.Communications.Channels
     {
         private readonly DecisionTreeHead _decisionTreeHead;
         private readonly BotConnector _botConnector;
+        private readonly Responses _responses;
 
-        public MessagesChannel(DecisionTreeHead decisionTreeHead, BotConnector botConnector)
+        public MessagesChannel(DecisionTreeHead decisionTreeHead, BotConnector botConnector, Responses responses)
         {
             _decisionTreeHead = decisionTreeHead;
             _botConnector = botConnector;
+            _responses = responses;
         }
 
-        public async Task Handle(Activity activity)
-        {
-            //var connector = this._responses.GetConnector(activity);
-
-            foreach (var response in _decisionTreeHead.Evaluate(activity))
-            {
-                await _botConnector.ReplyToActivityAsync(activity, response);
-                //await connector.Conversations.ReplyToActivityAsync(response);
-            }
-        }
-
-
+		public async Task Handle(Activity activity)
+		{
+		    await _responses.SendTypingIndicator(activity);
+			foreach (var response in _decisionTreeHead.Evaluate(activity))
+			{
+			    await _responses.SendTypingIndicator(activity);
+				await _botConnector.ReplyToActivityAsync(activity, response);
+			}
+		}
     }
 }

@@ -15,7 +15,7 @@ namespace Teamdare.Domain.DecisionTree.Actions
 
             Please.Do(new CompleteChallenge(challenge.Id));
 
-            var reply = activity.CreateReply(String.Format("You have finished {0}/3 steps of this adventure. ", challenge.Order + 1));
+            var reply = activity.CreateReply($"{Resources.ResourcesStrings.Congratulations} {Resources.Emoji.Tada} You have finished {challenge.Order + 1}/3 steps of this adventure. ");
 
             var areAllChallengesFromAdventureFinished =
                 Please.Check(new AreAllChallengesInAdventureFinished(challenge.Adventure.Id));
@@ -32,6 +32,10 @@ namespace Teamdare.Domain.DecisionTree.Actions
             }
 
             yield return reply;
+
+            var userHasUnfinishedChallenge = Please.Give(new HasAnyChallengeUnfinished(activity.From.Id)).QueryResult;
+            if(!userHasUnfinishedChallenge)
+                yield return activity.CreateReply("Congratulations! That's all I prepared for you by now! But stay ready for new adventures!");
 
             var giveUserChallengerResponses = new GiveUserChallenge().Evaluate(activity);
 

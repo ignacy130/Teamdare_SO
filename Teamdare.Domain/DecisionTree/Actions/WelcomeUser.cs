@@ -11,7 +11,22 @@ namespace Teamdare.Domain.DecisionTree.Actions
         public override IEnumerable<Activity> Evaluate(Activity activity)
         {
             Please.Do(new InitializeGame(activity.From.Name, activity.From.Id, activity.Conversation.Id, activity.ServiceUrl));
-            yield return activity.CreateReply(ResourcesStrings.WelcomeText);
+			var reply = activity.CreateReply();
+			var actionCard = new ThumbnailCard()
+			{
+				Buttons = new List<CardAction>()
+				{
+					new CardAction
+					{
+						Value = "I'm ready!",
+						Title = "I'm ready!",
+						Type = "imBack"
+					}
+				},
+				Text = ResourcesStrings.WelcomeText
+			};
+			reply.Attachments.Add(actionCard.ToAttachment());
+			yield return reply;
         }
     }
 }
