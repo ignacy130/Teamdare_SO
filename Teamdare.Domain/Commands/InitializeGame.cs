@@ -73,10 +73,10 @@ namespace Teamdare.Domain.Commands
 
             for (var i = 0; i < adventures.Count; i++)
             {
-                var adventure = CreateAdventure(player, adventures[i], i);
+				var adventure = CreateAdventure(player, adventures[i], i);
 
-                CreateChallenges(player, adventure, challanges[i]);
-            }
+				CreateChallenges(player, adventure, challanges[i]);
+			}
 
             DbContext.SaveChanges();
         }
@@ -85,7 +85,7 @@ namespace Teamdare.Domain.Commands
         {
              var adventure = new Adventure()
              {
-                 Player = player,
+                 PlayerId = player.Id,
                  Title = adventureInfo.Title,
                  FinishedText = adventureInfo.FinishedMessage,
                  FinishedImageUrl = adventureInfo.FinishedImageUrl,
@@ -106,8 +106,8 @@ namespace Teamdare.Domain.Commands
                     Title = challenges[i].Title,
 					Description = challenges[i].Description,
                     Order = i,
-                    Adventure = adventure,
-                    Player = player
+                    AdventureId = adventure.Id,
+                    PlayerId = player.Id
                 };
 
                 DbContext.Challenges.Add(challange);

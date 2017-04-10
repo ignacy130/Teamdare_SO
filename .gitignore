@@ -4,3 +4,5 @@ obj/
 packages/
 .idea/
 *.lock.json
+*.Production.json
+Backup[0-9]
