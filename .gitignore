@@ -5,4 +5,5 @@ packages/
 .idea/
 *.lock.json
 *.Production.json
+*.nuget.props
 Backup[0-9]
