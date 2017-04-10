@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>Teamdare.Worker</AssemblyName>
+    <PackageId>Teamdare.Worker</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Teamdare.Core\Teamdare.Core.csproj" />
+    <ProjectReference Include="..\Teamdare.Database\Teamdare.Database.csproj" />
+    <ProjectReference Include="..\Teamdare.Domain\Teamdare.Domain.csproj" />
+    <ProjectReference Include="..\Teamdare.Connector\Teamdare.Connector.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bot.Connector" Version="3.5.1.0-alpha" />
+  </ItemGroup>
+
+</Project>
