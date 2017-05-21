@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
@@ -15,6 +15,8 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <ApplicationInsightsResourceId>/subscriptions/3ee2ee14-c69b-4ce5-a47e-6800dee5e2ab/resourcegroups/Teamdare.RG/providers/microsoft.insights/components/Teamdare.Bot</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/3ee2ee14-c69b-4ce5-a47e-6800dee5e2ab/resourcegroups/Teamdare.RG/providers/microsoft.insights/components/Teamdare.Bot</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -50,6 +52,10 @@
     <PackageReference Include="Hangfire" Version="1.6.9" />
     <PackageReference Include="Hangfire.AspNetCore" Version="1.6.9" />
     <PackageReference Include="Hangfire.MemoryStorage" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>

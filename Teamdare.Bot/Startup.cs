@@ -93,7 +93,7 @@ namespace Teamdare.Bot
             app.UseHangfireDashboard();
             app.UseHangfireServer();
 
-            RecurringJob.AddOrUpdate<TaskReminder>(tr => tr.Execute(), Cron.Minutely);
+            //RecurringJob.AddOrUpdate<TaskReminder>(tr => tr.Execute(), Cron.Hourly);
                 
             app.UseMvc();
         }
